@@ -60,19 +60,11 @@ public class CosIndex
 //        String inDirectory = "user/yli25/data/data";
 //        String outDirectory = "user/yli25/output";
 
-<<<<<<< HEAD
-        String inDirectory = "finalData";
-        String outDirectory = "output";
-
-        JavaRDD<String> tmp = bmc.loadData(inDirectory + "/part-00000").cache();
-        JavaRDD<String> uniword = bmc.loadData(outDirectory + "/uniwordSequence/part-00000").cache();
-=======
         String inDirectory = "output/finalData";
         String outDirectory = "output";
 
         JavaRDD<String> tmp = bmc.loadData(inDirectory + "/part-*").cache();
         JavaRDD<String> uniword = bmc.loadData(outDirectory + "/uniwordSequence/part-*").cache();
->>>>>>> 518a1381115453df9a7694d189bed305fdce21ab
         //word,1,2,3
         JavaPairRDD<String, String> uniwordpair = uniword.mapToPair(new PairFunction<String, String, String>() {
             public Tuple2<String, String> call(String s) throws Exception {
@@ -246,8 +238,4 @@ public class CosIndex
         System.out.println("Success!");
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 518a1381115453df9a7694d189bed305fdce21ab

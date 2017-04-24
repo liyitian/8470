@@ -79,17 +79,10 @@ public class RankSearch
 //        String inDirectory = "user/yli25/data/data";
 //        String outDirectory = "user/yli25/output";
 
-<<<<<<< HEAD
-        String inDirectory = "output/BM25";
-        String outDirectory = "output/filtered";
-
-                rdd = rs.loadData(outDirectory + "/part-00000");
-=======
         String inDirectory = "output/filteredBM25";
         String outDirectory = "output/bm25result";
 
                 rdd = rs.loadData(inDirectory + "/part-*");
->>>>>>> 518a1381115453df9a7694d189bed305fdce21ab
 
         //(abstract,216081,0.004684143756800567), (389393,0.0211429345451755), (675557,0.00989804759628778), (482790,0.09762386879693727), (404821,0.046740984770699344), (516595,0.0130384069345866), (95729,0.15989567130099958), (505123,0.028377073330880603), (433702,0.01332701194608077)
         JavaPairRDD<String, String> wordIdRank = rdd.mapToPair(new PairFunction<String, String, String>() {
@@ -112,27 +105,6 @@ public class RankSearch
             }
         });
 
-<<<<<<< HEAD
-        JavaPairRDD<Integer, Double> idRank = wordIdRank.flatMapToPair(new PairFlatMapFunction<Tuple2<String, String>, Integer, Double>() {
-            public Iterator<Tuple2<Integer, Double>> call(Tuple2<String, String> stringStringTuple2) throws Exception {
-
-                String[] elements = stringStringTuple2._2.replaceAll("(\\s)","").split("\\),\\(", -1);
-                String word = stringStringTuple2._1;
-                List<Tuple2<Integer, Double>> list = new ArrayList<Tuple2<Integer, Double>>();
-
-                String[] first = elements[0].split(",");
-                int count = 0;
-                int id1 = Integer.parseInt(first[1]);
-                double rank1 = Double.parseDouble(first[2].replaceAll("\\)",""));
-                list.add(new Tuple2<Integer, Double>(id1, rank1));
-
-                for(String s : elements){
-                    if(count==0) {count++;continue;}
-                    String[] data = s.split(",");
-                    int itemid = Integer.parseInt(data[0]);
-                    double rank = Double.parseDouble(data[1].replaceAll("\\)",""));
-                    list.add(new Tuple2<Integer, Double>(itemid, rank));
-=======
         JavaPairRDD<Integer, RankInfo> idRank = wordIdRank.flatMapToPair(new PairFlatMapFunction<Tuple2<String, String>, Integer, RankInfo>() {
             public Iterator<Tuple2<Integer, RankInfo>> call(Tuple2<String, String> stringStringTuple2) throws Exception {
 
@@ -172,36 +144,10 @@ public class RankSearch
                     ri.setRank(rank);
                     ri.setHeadline(headline.replaceAll(",",""));
                     list.add(new Tuple2<Integer, RankInfo>(id, ri));
->>>>>>> 518a1381115453df9a7694d189bed305fdce21ab
                 }
 
                 return list.iterator();
             }
-<<<<<<< HEAD
-        }).reduceByKey(new Function2<Double, Double, Double>() {
-            public Double call(Double aDouble, Double aDouble2) throws Exception {
-                aDouble += aDouble2;
-                return aDouble;
-            }
-        });
-
-        JavaPairRDD<Double, Integer> rankId = idRank.mapToPair(new PairFunction<Tuple2<Integer, Double>, Double, Integer>() {
-            public Tuple2<Double, Integer> call(Tuple2<Integer, Double> integerDoubleTuple2) throws Exception {
-
-                return new Tuple2<Double, Integer>(integerDoubleTuple2._2, integerDoubleTuple2._1);
-            }
-        }).sortByKey(false);
-
-        List<Tuple2<Double, Integer>> topRecords = rankId.take(20);
-
-
-
-        for(Tuple2<Double,Integer> t : topRecords)
-        System.out.println("top records:" + t);
-
-        JavaRDD<Tuple2<Double, Integer>> outputRdd = rs.context.parallelize(topRecords).coalesce(1);
-        outputRdd.saveAsTextFile(outDirectory+"/../rankSearchResult");
-=======
         }).reduceByKey(new Function2<RankInfo, RankInfo, RankInfo>() {
             public RankInfo call(RankInfo rankInfo, RankInfo rankInfo2) throws Exception {
                 double totalrank = rankInfo.getRank()+rankInfo2.getRank();
@@ -227,7 +173,6 @@ public class RankSearch
 
         JavaRDD<Tuple2<Double, String>> outputRdd = rs.context.parallelize(topRecords).coalesce(1);
         outputRdd.saveAsTextFile(outDirectory+"/rankSearchResult");
->>>>>>> 518a1381115453df9a7694d189bed305fdce21ab
 
         System.out.println("Success!");
     }
