@@ -82,7 +82,8 @@ public class RankSearch
         String inDirectory = "output/filteredBM25";
         String outDirectory = "output/bm25result";
 
-                rdd = rs.loadData(inDirectory + "/part-*");
+//        rdd = rs.loadData(inDirectory + "/part-*");
+        rdd = rs.loadData(inDirectory + "/*.gz");
 
         //(abstract,216081,0.004684143756800567), (389393,0.0211429345451755), (675557,0.00989804759628778), (482790,0.09762386879693727), (404821,0.046740984770699344), (516595,0.0130384069345866), (95729,0.15989567130099958), (505123,0.028377073330880603), (433702,0.01332701194608077)
         JavaPairRDD<String, String> wordIdRank = rdd.mapToPair(new PairFunction<String, String, String>() {
@@ -159,7 +160,7 @@ public class RankSearch
         final JavaPairRDD<Double, String> rankId = idRank.mapToPair(new PairFunction<Tuple2<Integer, RankInfo>, Double, String>() {
             public Tuple2<Double, String> call(Tuple2<Integer, RankInfo> integerDoubleTuple2) throws Exception {
 
-                String s = integerDoubleTuple2._2.getId()+":"+integerDoubleTuple2._2.getHeadline();
+                String s = integerDoubleTuple2._2.getId()+":"+integerDoubleTuple2._2.getHeadline().replaceAll("(&amp;)","&");
                 return new Tuple2<Double, String>(integerDoubleTuple2._2.getRank()/2.0, s);
             }
         }).sortByKey(false);
