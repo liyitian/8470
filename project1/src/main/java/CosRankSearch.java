@@ -76,7 +76,7 @@ public class CosRankSearch
         String outDirectory = "output/cosresult";
 
 //                rdd = rs.loadData(inDirectory + "/part-*");
-        rdd = rs.loadData(inDirectory + ".gz");
+        rdd = rs.loadData(inDirectory + "/*.gz");
         
         //(abstract,216081,0.004684143756800567), (389393,0.0211429345451755), (675557,0.00989804759628778), (482790,0.09762386879693727), (404821,0.046740984770699344), (516595,0.0130384069345866), (95729,0.15989567130099958), (505123,0.028377073330880603), (433702,0.01332701194608077)
         JavaPairRDD<String, String> wordIdRank = rdd.mapToPair(new PairFunction<String, String, String>() {
