@@ -1,0 +1,1248 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/04/22 20:35:36 INFO SparkContext: Running Spark version 2.1.0
+17/04/22 20:35:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/04/22 20:35:37 INFO SecurityManager: Changing view acls to: yitianl
+17/04/22 20:35:37 INFO SecurityManager: Changing modify acls to: yitianl
+17/04/22 20:35:37 INFO SecurityManager: Changing view acls groups to: 
+17/04/22 20:35:37 INFO SecurityManager: Changing modify acls groups to: 
+17/04/22 20:35:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yitianl); groups with view permissions: Set(); users  with modify permissions: Set(yitianl); groups with modify permissions: Set()
+17/04/22 20:35:37 INFO Utils: Successfully started service 'sparkDriver' on port 56199.
+17/04/22 20:35:37 INFO SparkEnv: Registering MapOutputTracker
+17/04/22 20:35:37 INFO SparkEnv: Registering BlockManagerMaster
+17/04/22 20:35:37 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/04/22 20:35:37 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/04/22 20:35:37 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e3315ad1-782e-4751-b15e-7b2cde02a9ac
+17/04/22 20:35:37 INFO MemoryStore: MemoryStore started with capacity 34.0 GB
+17/04/22 20:35:37 INFO SparkEnv: Registering OutputCommitCoordinator
+17/04/22 20:35:37 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/04/22 20:35:37 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.125.1.127:4040
+17/04/22 20:35:37 INFO SparkContext: Added JAR file:/home/yitianl/8470/8470/project1/target/project1-1.0-SNAPSHOT-jar-with-dependencies.jar at spark://10.125.1.127:56199/jars/project1-1.0-SNAPSHOT-jar-with-dependencies.jar with timestamp 1492907737661
+17/04/22 20:35:37 INFO Executor: Starting executor ID driver on host localhost
+17/04/22 20:35:37 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 55018.
+17/04/22 20:35:37 INFO NettyBlockTransferService: Server created on 10.125.1.127:55018
+17/04/22 20:35:37 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/04/22 20:35:37 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.125.1.127, 55018, None)
+17/04/22 20:35:37 INFO BlockManagerMasterEndpoint: Registering block manager 10.125.1.127:55018 with 34.0 GB RAM, BlockManagerId(driver, 10.125.1.127, 55018, None)
+17/04/22 20:35:37 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.125.1.127, 55018, None)
+17/04/22 20:35:37 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.125.1.127, 55018, None)
+17/04/22 20:35:38 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 300.3 KB, free 34.0 GB)
+17/04/22 20:35:38 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.8 KB, free 34.0 GB)
+17/04/22 20:35:38 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.125.1.127:55018 (size: 22.8 KB, free: 34.0 GB)
+17/04/22 20:35:38 INFO SparkContext: Created broadcast 0 from textFile at BM25Calculator.java:38
+17/04/22 20:35:38 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 300.3 KB, free 34.0 GB)
+17/04/22 20:35:38 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 22.8 KB, free 34.0 GB)
+17/04/22 20:35:38 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.125.1.127:55018 (size: 22.8 KB, free: 34.0 GB)
+17/04/22 20:35:38 INFO SparkContext: Created broadcast 1 from textFile at BM25Calculator.java:38
+17/04/22 20:35:38 INFO MapPartitionsRDD: Removing RDD 1 from persistence list
+17/04/22 20:35:38 INFO BlockManager: Removing RDD 1
+17/04/22 20:35:38 INFO FileInputFormat: Total input paths to process : 20
+17/04/22 20:35:38 INFO SparkContext: Starting job: collect at CosIndex.java:129
+17/04/22 20:35:38 INFO DAGScheduler: Got job 0 (collect at CosIndex.java:129) with 20 output partitions
+17/04/22 20:35:38 INFO DAGScheduler: Final stage: ResultStage 0 (collect at CosIndex.java:129)
+17/04/22 20:35:38 INFO DAGScheduler: Parents of final stage: List()
+17/04/22 20:35:38 INFO DAGScheduler: Missing parents: List()
+17/04/22 20:35:38 INFO DAGScheduler: Submitting ResultStage 0 (CoalescedRDD[8] at coalesce at CosIndex.java:124), which has no missing parents
+17/04/22 20:35:38 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.6 KB, free 34.0 GB)
+17/04/22 20:35:38 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.5 KB, free 34.0 GB)
+17/04/22 20:35:38 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.125.1.127:55018 (size: 2.5 KB, free: 34.0 GB)
+17/04/22 20:35:38 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:996
+17/04/22 20:35:38 INFO DAGScheduler: Submitting 20 missing tasks from ResultStage 0 (CoalescedRDD[8] at coalesce at CosIndex.java:124)
+17/04/22 20:35:38 INFO TaskSchedulerImpl: Adding task set 0.0 with 20 tasks
+17/04/22 20:35:38 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:38 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:38 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:38 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, executor driver, partition 3, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:38 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+17/04/22 20:35:38 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+17/04/22 20:35:38 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+17/04/22 20:35:38 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+17/04/22 20:35:38 INFO Executor: Fetching spark://10.125.1.127:56199/jars/project1-1.0-SNAPSHOT-jar-with-dependencies.jar with timestamp 1492907737661
+17/04/22 20:35:38 INFO TransportClientFactory: Successfully created connection to /10.125.1.127:56199 after 21 ms (0 ms spent in bootstraps)
+17/04/22 20:35:38 INFO Utils: Fetching spark://10.125.1.127:56199/jars/project1-1.0-SNAPSHOT-jar-with-dependencies.jar to /tmp/spark-84f0deb4-4cac-4636-aeb6-b407d98ac4a1/userFiles-3f575826-f74f-49ed-8b64-4395cf015800/fetchFileTemp5062389619847581779.tmp
+17/04/22 20:35:39 INFO Executor: Adding file:/tmp/spark-84f0deb4-4cac-4636-aeb6-b407d98ac4a1/userFiles-3f575826-f74f-49ed-8b64-4395cf015800/project1-1.0-SNAPSHOT-jar-with-dependencies.jar to class loader
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00010:0+33554432
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00007:0+33554432
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00004:0+33554432
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00000:0+33554432
+17/04/22 20:35:39 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+17/04/22 20:35:39 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+17/04/22 20:35:39 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+17/04/22 20:35:39 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+17/04/22 20:35:39 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00004:33554432+33554432
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00000:33554432+33554432
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00010:33554432+33554432
+17/04/22 20:35:39 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00007:33554432+33554432
+17/04/22 20:35:40 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00010:67108864+33554432
+17/04/22 20:35:40 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00004:67108864+33554432
+17/04/22 20:35:40 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00000:67108864+33554432
+17/04/22 20:35:40 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00007:67108864+33554432
+17/04/22 20:35:41 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00010:100663296+33434339
+17/04/22 20:35:41 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00004:100663296+32788710
+17/04/22 20:35:41 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00000:100663296+32468025
+17/04/22 20:35:41 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00007:100663296+32725351
+17/04/22 20:35:43 INFO MemoryStore: Block taskresult_1 stored as bytes in memory (estimated size 127.7 MB, free 33.8 GB)
+17/04/22 20:35:43 INFO BlockManagerInfo: Added taskresult_1 in memory on 10.125.1.127:55018 (size: 127.7 MB, free: 33.8 GB)
+17/04/22 20:35:43 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 133892331 bytes result sent via BlockManager)
+17/04/22 20:35:43 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, executor driver, partition 4, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:43 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+17/04/22 20:35:43 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00016:0+33554432
+17/04/22 20:35:43 INFO TransportClientFactory: Successfully created connection to /10.125.1.127:55018 after 2 ms (0 ms spent in bootstraps)
+17/04/22 20:35:43 INFO MemoryStore: Block taskresult_2 stored as bytes in memory (estimated size 128.3 MB, free 33.7 GB)
+17/04/22 20:35:43 INFO BlockManagerInfo: Added taskresult_2 in memory on 10.125.1.127:55018 (size: 128.3 MB, free: 33.7 GB)
+17/04/22 20:35:43 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 134542737 bytes result sent via BlockManager)
+17/04/22 20:35:43 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, executor driver, partition 5, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:43 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+17/04/22 20:35:43 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00019:0+33554432
+17/04/22 20:35:43 INFO MemoryStore: Block taskresult_0 stored as bytes in memory (estimated size 127.4 MB, free 33.5 GB)
+17/04/22 20:35:43 INFO MemoryStore: Block taskresult_3 stored as bytes in memory (estimated size 127.6 MB, free 33.5 GB)
+17/04/22 20:35:43 INFO BlockManagerInfo: Added taskresult_0 in memory on 10.125.1.127:55018 (size: 127.4 MB, free: 33.6 GB)
+17/04/22 20:35:43 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 133573718 bytes result sent via BlockManager)
+17/04/22 20:35:43 INFO BlockManagerInfo: Added taskresult_3 in memory on 10.125.1.127:55018 (size: 127.6 MB, free: 33.5 GB)
+17/04/22 20:35:43 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 133832831 bytes result sent via BlockManager)
+17/04/22 20:35:43 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, executor driver, partition 6, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:43 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+17/04/22 20:35:43 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, localhost, executor driver, partition 7, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:43 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+17/04/22 20:35:43 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00006:0+33554432
+17/04/22 20:35:43 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00011:0+33554432
+17/04/22 20:35:44 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00016:33554432+33554432
+17/04/22 20:35:44 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00019:33554432+33554432
+17/04/22 20:35:44 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 5420 ms on localhost (executor driver) (1/20)
+17/04/22 20:35:44 INFO BlockManagerInfo: Removed taskresult_1 on 10.125.1.127:55018 in memory (size: 127.7 MB, free: 33.6 GB)
+17/04/22 20:35:45 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 6211 ms on localhost (executor driver) (2/20)
+17/04/22 20:35:45 INFO BlockManagerInfo: Removed taskresult_2 on 10.125.1.127:55018 in memory (size: 128.3 MB, free: 33.7 GB)
+17/04/22 20:35:45 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00011:33554432+33554432
+17/04/22 20:35:45 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00006:33554432+33554432
+17/04/22 20:35:45 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 6427 ms on localhost (executor driver) (3/20)
+17/04/22 20:35:45 INFO BlockManagerInfo: Removed taskresult_0 on 10.125.1.127:55018 in memory (size: 127.4 MB, free: 33.8 GB)
+17/04/22 20:35:45 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 6539 ms on localhost (executor driver) (4/20)
+17/04/22 20:35:45 INFO BlockManagerInfo: Removed taskresult_3 on 10.125.1.127:55018 in memory (size: 127.6 MB, free: 34.0 GB)
+17/04/22 20:35:45 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00016:67108864+33554432
+17/04/22 20:35:45 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00019:67108864+33554432
+17/04/22 20:35:45 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00011:67108864+33554432
+17/04/22 20:35:45 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00006:67108864+33554432
+17/04/22 20:35:46 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00016:100663296+33071035
+17/04/22 20:35:46 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00019:100663296+32747180
+17/04/22 20:35:46 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00011:100663296+32611698
+17/04/22 20:35:46 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00006:100663296+32286277
+17/04/22 20:35:47 INFO MemoryStore: Block taskresult_5 stored as bytes in memory (estimated size 127.6 MB, free 33.7 GB)
+17/04/22 20:35:47 INFO MemoryStore: Block taskresult_4 stored as bytes in memory (estimated size 128.0 MB, free 33.7 GB)
+17/04/22 20:35:47 INFO BlockManagerInfo: Added taskresult_5 in memory on 10.125.1.127:55018 (size: 127.6 MB, free: 33.8 GB)
+17/04/22 20:35:47 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 133846936 bytes result sent via BlockManager)
+17/04/22 20:35:47 INFO BlockManagerInfo: Added taskresult_4 in memory on 10.125.1.127:55018 (size: 128.0 MB, free: 33.7 GB)
+17/04/22 20:35:47 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 134179437 bytes result sent via BlockManager)
+17/04/22 20:35:47 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, localhost, executor driver, partition 8, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:47 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+17/04/22 20:35:47 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, localhost, executor driver, partition 9, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:47 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+17/04/22 20:35:47 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00017:0+33554432
+17/04/22 20:35:47 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00014:0+33554432
+17/04/22 20:35:47 INFO MemoryStore: Block taskresult_7 stored as bytes in memory (estimated size 127.5 MB, free 33.6 GB)
+17/04/22 20:35:47 INFO BlockManagerInfo: Added taskresult_7 in memory on 10.125.1.127:55018 (size: 127.5 MB, free: 33.6 GB)
+17/04/22 20:35:47 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 133710012 bytes result sent via BlockManager)
+17/04/22 20:35:47 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, localhost, executor driver, partition 10, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:47 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+17/04/22 20:35:47 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00009:0+33554432
+17/04/22 20:35:47 INFO MemoryStore: Block taskresult_6 stored as bytes in memory (estimated size 127.2 MB, free 33.5 GB)
+17/04/22 20:35:47 INFO BlockManagerInfo: Added taskresult_6 in memory on 10.125.1.127:55018 (size: 127.2 MB, free: 33.5 GB)
+17/04/22 20:35:47 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 133387087 bytes result sent via BlockManager)
+17/04/22 20:35:47 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, localhost, executor driver, partition 11, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:47 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+17/04/22 20:35:47 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00008:0+33554432
+17/04/22 20:35:47 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 4519 ms on localhost (executor driver) (5/20)
+17/04/22 20:35:47 INFO BlockManagerInfo: Removed taskresult_5 on 10.125.1.127:55018 in memory (size: 127.6 MB, free: 33.6 GB)
+17/04/22 20:35:48 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00017:33554432+33554432
+17/04/22 20:35:48 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00014:33554432+33554432
+17/04/22 20:35:48 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 5312 ms on localhost (executor driver) (6/20)
+17/04/22 20:35:48 INFO BlockManagerInfo: Removed taskresult_4 on 10.125.1.127:55018 in memory (size: 128.0 MB, free: 33.7 GB)
+17/04/22 20:35:48 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00009:33554432+33554432
+17/04/22 20:35:48 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 5244 ms on localhost (executor driver) (7/20)
+17/04/22 20:35:48 INFO BlockManagerInfo: Removed taskresult_7 on 10.125.1.127:55018 in memory (size: 127.5 MB, free: 33.8 GB)
+17/04/22 20:35:49 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00008:33554432+33554432
+17/04/22 20:35:49 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 5421 ms on localhost (executor driver) (8/20)
+17/04/22 20:35:49 INFO BlockManagerInfo: Removed taskresult_6 on 10.125.1.127:55018 in memory (size: 127.2 MB, free: 34.0 GB)
+17/04/22 20:35:49 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00014:67108864+33554432
+17/04/22 20:35:49 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00017:67108864+33554432
+17/04/22 20:35:49 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00009:67108864+33554432
+17/04/22 20:35:49 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00008:67108864+33554432
+17/04/22 20:35:50 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00014:100663296+33082981
+17/04/22 20:35:50 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00017:100663296+33001376
+17/04/22 20:35:50 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00009:100663296+32714797
+17/04/22 20:35:50 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00008:100663296+32035306
+17/04/22 20:35:51 INFO MemoryStore: Block taskresult_8 stored as bytes in memory (estimated size 127.9 MB, free 33.7 GB)
+17/04/22 20:35:51 INFO MemoryStore: Block taskresult_9 stored as bytes in memory (estimated size 128.0 MB, free 33.7 GB)
+17/04/22 20:35:51 INFO BlockManagerInfo: Added taskresult_8 in memory on 10.125.1.127:55018 (size: 127.9 MB, free: 33.8 GB)
+17/04/22 20:35:51 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 134105357 bytes result sent via BlockManager)
+17/04/22 20:35:51 INFO BlockManagerInfo: Added taskresult_9 in memory on 10.125.1.127:55018 (size: 128.0 MB, free: 33.7 GB)
+17/04/22 20:35:51 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 134184496 bytes result sent via BlockManager)
+17/04/22 20:35:51 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, localhost, executor driver, partition 12, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:51 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+17/04/22 20:35:51 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, localhost, executor driver, partition 13, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:51 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+17/04/22 20:35:51 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00002:0+33554432
+17/04/22 20:35:51 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00013:0+33554432
+17/04/22 20:35:52 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 5279 ms on localhost (executor driver) (9/20)
+17/04/22 20:35:52 INFO BlockManagerInfo: Removed taskresult_8 on 10.125.1.127:55018 in memory (size: 127.9 MB, free: 33.8 GB)
+17/04/22 20:35:52 INFO MemoryStore: Block taskresult_10 stored as bytes in memory (estimated size 127.6 MB, free 33.7 GB)
+17/04/22 20:35:52 INFO BlockManagerInfo: Added taskresult_10 in memory on 10.125.1.127:55018 (size: 127.6 MB, free: 33.7 GB)
+17/04/22 20:35:52 INFO Executor: Finished task 10.0 in stage 0.0 (TID 10). 133809854 bytes result sent via BlockManager)
+17/04/22 20:35:52 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, localhost, executor driver, partition 14, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:52 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+17/04/22 20:35:52 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00003:0+33554432
+17/04/22 20:35:52 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00002:33554432+33554432
+17/04/22 20:35:52 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00013:33554432+33554432
+17/04/22 20:35:52 INFO MemoryStore: Block taskresult_11 stored as bytes in memory (estimated size 127.0 MB, free 33.6 GB)
+17/04/22 20:35:52 INFO BlockManagerInfo: Added taskresult_11 in memory on 10.125.1.127:55018 (size: 127.0 MB, free: 33.6 GB)
+17/04/22 20:35:52 INFO Executor: Finished task 11.0 in stage 0.0 (TID 11). 133125847 bytes result sent via BlockManager)
+17/04/22 20:35:52 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, localhost, executor driver, partition 15, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:52 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+17/04/22 20:35:52 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00015:0+33554432
+17/04/22 20:35:53 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 5485 ms on localhost (executor driver) (10/20)
+17/04/22 20:35:53 INFO BlockManagerInfo: Removed taskresult_9 on 10.125.1.127:55018 in memory (size: 128.0 MB, free: 33.7 GB)
+17/04/22 20:35:53 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 5504 ms on localhost (executor driver) (11/20)
+17/04/22 20:35:53 INFO BlockManagerInfo: Removed taskresult_10 on 10.125.1.127:55018 in memory (size: 127.6 MB, free: 33.8 GB)
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00003:33554432+33554432
+17/04/22 20:35:53 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 5600 ms on localhost (executor driver) (12/20)
+17/04/22 20:35:53 INFO BlockManagerInfo: Removed taskresult_11 on 10.125.1.127:55018 in memory (size: 127.0 MB, free: 34.0 GB)
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00002:67108864+33554432
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00013:67108864+33554432
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00015:33554432+33554432
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00003:67108864+33554432
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00002:100663296+32787811
+17/04/22 20:35:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00013:100663296+31384813
+17/04/22 20:35:54 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00015:67108864+33554432
+17/04/22 20:35:54 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00003:100663296+32368949
+17/04/22 20:35:54 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00015:100663296+32455491
+17/04/22 20:35:55 INFO MemoryStore: Block taskresult_13 stored as bytes in memory (estimated size 126.3 MB, free 33.8 GB)
+17/04/22 20:35:55 INFO BlockManagerInfo: Added taskresult_13 in memory on 10.125.1.127:55018 (size: 126.3 MB, free: 33.8 GB)
+17/04/22 20:35:55 INFO Executor: Finished task 13.0 in stage 0.0 (TID 13). 132482340 bytes result sent via BlockManager)
+17/04/22 20:35:55 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, localhost, executor driver, partition 16, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:55 INFO Executor: Running task 16.0 in stage 0.0 (TID 16)
+17/04/22 20:35:55 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00018:0+33554432
+17/04/22 20:35:55 INFO MemoryStore: Block taskresult_12 stored as bytes in memory (estimated size 127.7 MB, free 33.7 GB)
+17/04/22 20:35:55 INFO BlockManagerInfo: Added taskresult_12 in memory on 10.125.1.127:55018 (size: 127.7 MB, free: 33.7 GB)
+17/04/22 20:35:55 INFO Executor: Finished task 12.0 in stage 0.0 (TID 12). 133878940 bytes result sent via BlockManager)
+17/04/22 20:35:55 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, localhost, executor driver, partition 17, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:55 INFO Executor: Running task 17.0 in stage 0.0 (TID 17)
+17/04/22 20:35:55 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00001:0+33554432
+17/04/22 20:35:55 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 4592 ms on localhost (executor driver) (13/20)
+17/04/22 20:35:55 INFO BlockManagerInfo: Removed taskresult_13 on 10.125.1.127:55018 in memory (size: 126.3 MB, free: 33.8 GB)
+17/04/22 20:35:55 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00018:33554432+33554432
+17/04/22 20:35:55 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00001:33554432+33554432
+17/04/22 20:35:56 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 4797 ms on localhost (executor driver) (14/20)
+17/04/22 20:35:56 INFO BlockManagerInfo: Removed taskresult_12 on 10.125.1.127:55018 in memory (size: 127.7 MB, free: 34.0 GB)
+17/04/22 20:35:56 INFO MemoryStore: Block taskresult_14 stored as bytes in memory (estimated size 127.3 MB, free 33.8 GB)
+17/04/22 20:35:56 INFO BlockManagerInfo: Added taskresult_14 in memory on 10.125.1.127:55018 (size: 127.3 MB, free: 33.8 GB)
+17/04/22 20:35:56 INFO Executor: Finished task 14.0 in stage 0.0 (TID 14). 133467446 bytes result sent via BlockManager)
+17/04/22 20:35:56 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, localhost, executor driver, partition 18, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:56 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+17/04/22 20:35:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00005:0+33554432
+17/04/22 20:35:56 INFO MemoryStore: Block taskresult_15 stored as bytes in memory (estimated size 127.4 MB, free 33.7 GB)
+17/04/22 20:35:56 INFO BlockManagerInfo: Added taskresult_15 in memory on 10.125.1.127:55018 (size: 127.4 MB, free: 33.7 GB)
+17/04/22 20:35:56 INFO Executor: Finished task 15.0 in stage 0.0 (TID 15). 133562014 bytes result sent via BlockManager)
+17/04/22 20:35:56 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, localhost, executor driver, partition 19, PROCESS_LOCAL, 6921 bytes)
+17/04/22 20:35:56 INFO Executor: Running task 19.0 in stage 0.0 (TID 19)
+17/04/22 20:35:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00012:0+33554432
+17/04/22 20:35:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00018:67108864+33554432
+17/04/22 20:35:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00001:67108864+33554432
+17/04/22 20:35:57 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 4324 ms on localhost (executor driver) (15/20)
+17/04/22 20:35:57 INFO BlockManagerInfo: Removed taskresult_14 on 10.125.1.127:55018 in memory (size: 127.3 MB, free: 33.8 GB)
+17/04/22 20:35:57 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00005:33554432+33554432
+17/04/22 20:35:57 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 4399 ms on localhost (executor driver) (16/20)
+17/04/22 20:35:57 INFO BlockManagerInfo: Removed taskresult_15 on 10.125.1.127:55018 in memory (size: 127.4 MB, free: 34.0 GB)
+17/04/22 20:35:57 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00012:33554432+33554432
+17/04/22 20:35:57 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00018:100663296+32326196
+17/04/22 20:35:57 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00001:100663296+32480976
+17/04/22 20:35:57 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00005:67108864+33554432
+17/04/22 20:35:57 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00012:67108864+33554432
+17/04/22 20:35:58 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00005:100663296+32630553
+17/04/22 20:35:58 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/finalData/part-00012:100663296+32382760
+17/04/22 20:35:58 INFO MemoryStore: Block taskresult_16 stored as bytes in memory (estimated size 127.2 MB, free 33.8 GB)
+17/04/22 20:35:58 INFO BlockManagerInfo: Added taskresult_16 in memory on 10.125.1.127:55018 (size: 127.2 MB, free: 33.8 GB)
+17/04/22 20:35:58 INFO Executor: Finished task 16.0 in stage 0.0 (TID 16). 133418442 bytes result sent via BlockManager)
+17/04/22 20:35:58 INFO MemoryStore: Block taskresult_17 stored as bytes in memory (estimated size 127.4 MB, free 33.7 GB)
+17/04/22 20:35:58 INFO BlockManagerInfo: Added taskresult_17 in memory on 10.125.1.127:55018 (size: 127.4 MB, free: 33.7 GB)
+17/04/22 20:35:58 INFO Executor: Finished task 17.0 in stage 0.0 (TID 17). 133564788 bytes result sent via BlockManager)
+17/04/22 20:36:02 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 7262 ms on localhost (executor driver) (17/20)
+17/04/22 20:36:02 INFO BlockManagerInfo: Removed taskresult_16 on 10.125.1.127:55018 in memory (size: 127.2 MB, free: 33.8 GB)
+17/04/22 20:36:02 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 7449 ms on localhost (executor driver) (18/20)
+17/04/22 20:36:02 INFO BlockManagerInfo: Removed taskresult_17 on 10.125.1.127:55018 in memory (size: 127.4 MB, free: 34.0 GB)
+17/04/22 20:36:03 INFO MemoryStore: Block taskresult_18 stored as bytes in memory (estimated size 127.5 MB, free 33.8 GB)
+17/04/22 20:36:03 INFO BlockManagerInfo: Added taskresult_18 in memory on 10.125.1.127:55018 (size: 127.5 MB, free: 33.8 GB)
+17/04/22 20:36:03 INFO Executor: Finished task 18.0 in stage 0.0 (TID 18). 133715237 bytes result sent via BlockManager)
+17/04/22 20:36:03 INFO MemoryStore: Block taskresult_19 stored as bytes in memory (estimated size 127.3 MB, free 33.7 GB)
+17/04/22 20:36:03 INFO BlockManagerInfo: Added taskresult_19 in memory on 10.125.1.127:55018 (size: 127.3 MB, free: 33.7 GB)
+17/04/22 20:36:03 INFO Executor: Finished task 19.0 in stage 0.0 (TID 19). 133474643 bytes result sent via BlockManager)
+17/04/22 20:36:03 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 7673 ms on localhost (executor driver) (19/20)
+17/04/22 20:36:03 INFO BlockManagerInfo: Removed taskresult_18 on 10.125.1.127:55018 in memory (size: 127.5 MB, free: 33.8 GB)
+17/04/22 20:36:04 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 7240 ms on localhost (executor driver) (20/20)
+17/04/22 20:36:04 INFO BlockManagerInfo: Removed taskresult_19 on 10.125.1.127:55018 in memory (size: 127.3 MB, free: 34.0 GB)
+17/04/22 20:36:04 INFO DAGScheduler: ResultStage 0 (collect at CosIndex.java:129) finished in 25.245 s
+17/04/22 20:36:04 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/04/22 20:36:04 INFO DAGScheduler: Job 0 finished: collect at CosIndex.java:129, took 25.316028 s
+17/04/22 20:36:13 INFO FileInputFormat: Total input paths to process : 20
+17/04/22 20:36:13 INFO MapPartitionsRDD: Removing RDD 4 from persistence list
+17/04/22 20:36:13 INFO BlockManager: Removing RDD 4
+17/04/22 20:36:13 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/22 20:36:13 INFO SparkContext: Starting job: saveAsTextFile at CosIndex.java:218
+17/04/22 20:36:13 INFO DAGScheduler: Registering RDD 10 (filter at CosIndex.java:201)
+17/04/22 20:36:13 INFO DAGScheduler: Got job 1 (saveAsTextFile at CosIndex.java:218) with 1 output partitions
+17/04/22 20:36:13 INFO DAGScheduler: Final stage: ResultStage 2 (saveAsTextFile at CosIndex.java:218)
+17/04/22 20:36:13 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+17/04/22 20:36:13 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+17/04/22 20:36:13 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[10] at filter at CosIndex.java:201), which has no missing parents
+17/04/22 20:36:22 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 1279.4 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 34.0 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece1 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece1 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece2 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece2 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece3 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece3 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece4 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece4 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece5 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece5 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece6 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece6 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece7 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece7 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece8 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece8 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece9 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece9 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece10 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece10 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece11 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece11 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece12 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece12 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece13 stored as bytes in memory (estimated size 4.0 MB, free 32.7 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece13 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece14 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece14 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece15 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece15 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece16 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece16 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece17 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece17 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece18 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece18 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece19 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece19 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece20 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece20 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece21 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece21 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece22 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece22 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece23 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece23 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece24 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece24 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece25 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece25 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece26 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece26 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.9 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece27 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece27 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece28 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece28 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece29 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece29 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece30 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece30 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece31 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece31 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece32 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece32 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece33 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece33 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece34 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece34 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece35 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece35 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece36 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece36 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece37 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece37 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece38 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece38 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece39 stored as bytes in memory (estimated size 4.0 MB, free 32.6 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece39 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece40 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece40 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece41 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece41 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece42 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece42 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece43 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece43 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece44 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece44 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece45 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece45 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece46 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece46 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece47 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece47 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece48 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece48 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece49 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece49 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece50 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece50 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece51 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece51 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece52 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece52 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.8 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece53 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece53 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece54 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece54 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece55 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece55 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece56 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece56 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece57 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece57 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece58 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece58 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece59 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece59 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece60 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece60 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece61 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece61 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece62 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece62 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece63 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece63 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece64 stored as bytes in memory (estimated size 4.0 MB, free 32.5 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece64 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece65 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece65 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece66 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece66 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece67 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece67 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece68 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece68 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece69 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece69 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece70 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece70 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece71 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece71 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece72 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece72 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece73 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece73 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece74 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece74 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece75 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece75 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece76 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece76 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece77 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece77 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.7 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece78 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece78 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece79 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece79 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece80 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece80 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece81 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece81 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece82 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece82 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece83 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece83 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece84 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece84 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece85 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece85 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece86 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece86 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece87 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece87 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece88 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece88 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece89 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece89 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece90 stored as bytes in memory (estimated size 4.0 MB, free 32.4 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece90 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece91 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece91 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece92 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece92 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece93 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece93 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece94 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece94 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece95 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece95 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece96 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece96 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece97 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece97 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece98 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece98 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece99 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece99 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece100 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece100 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece101 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece101 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece102 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece102 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece103 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece103 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.6 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece104 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece104 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece105 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece105 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece106 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece106 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece107 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece107 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece108 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece108 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece109 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece109 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece110 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece110 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece111 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece111 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece112 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece112 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece113 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece113 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece114 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece114 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece115 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece115 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece116 stored as bytes in memory (estimated size 4.0 MB, free 32.3 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece116 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece117 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece117 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece118 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece118 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece119 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece119 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece120 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece120 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece121 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece121 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece122 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece122 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece123 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece123 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece124 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece124 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece125 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece125 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece126 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece126 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece127 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece127 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece128 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece128 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.5 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece129 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece129 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece130 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece130 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece131 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece131 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece132 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece132 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece133 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece133 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece134 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece134 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece135 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece135 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece136 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece136 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece137 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece137 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece138 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece138 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece139 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece139 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece140 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece140 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece141 stored as bytes in memory (estimated size 4.0 MB, free 32.2 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece141 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece142 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece142 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece143 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece143 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece144 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece144 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece145 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece145 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece146 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece146 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:27 INFO MemoryStore: Block broadcast_3_piece147 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:27 INFO BlockManagerInfo: Added broadcast_3_piece147 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece148 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece148 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece149 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece149 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece150 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece150 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece151 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece151 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece152 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece152 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece153 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece153 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece154 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece154 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.4 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece155 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece155 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece156 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece156 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece157 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece157 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece158 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece158 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece159 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece159 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece160 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece160 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece161 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece161 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece162 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece162 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece163 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece163 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece164 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece164 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece165 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece165 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece166 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece166 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece167 stored as bytes in memory (estimated size 4.0 MB, free 32.1 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece167 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece168 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece168 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece169 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece169 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece170 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece170 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece171 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece171 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece172 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece172 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece173 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece173 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece174 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece174 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece175 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece175 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece176 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece176 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece177 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece177 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece178 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece178 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece179 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece179 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece180 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece180 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.3 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece181 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece181 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.2 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece182 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece182 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.2 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece183 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece183 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.2 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece184 stored as bytes in memory (estimated size 4.0 MB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece184 in memory on 10.125.1.127:55018 (size: 4.0 MB, free: 33.2 GB)
+17/04/22 20:36:28 INFO MemoryStore: Block broadcast_3_piece185 stored as bytes in memory (estimated size 1596.9 KB, free 32.0 GB)
+17/04/22 20:36:28 INFO BlockManagerInfo: Added broadcast_3_piece185 in memory on 10.125.1.127:55018 (size: 1596.9 KB, free: 33.2 GB)
+17/04/22 20:36:28 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:996
+17/04/22 20:36:28 INFO DAGScheduler: Submitting 30 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[10] at filter at CosIndex.java:201)
+17/04/22 20:36:28 INFO TaskSchedulerImpl: Adding task set 1.0 with 30 tasks
+17/04/22 20:36:28 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 20, localhost, executor driver, partition 0, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:36:28 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 21, localhost, executor driver, partition 1, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:36:28 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 22, localhost, executor driver, partition 2, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:36:28 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 23, localhost, executor driver, partition 3, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:36:28 INFO Executor: Running task 1.0 in stage 1.0 (TID 21)
+17/04/22 20:36:28 INFO Executor: Running task 0.0 in stage 1.0 (TID 20)
+17/04/22 20:36:28 INFO Executor: Running task 3.0 in stage 1.0 (TID 23)
+17/04/22 20:36:28 INFO Executor: Running task 2.0 in stage 1.0 (TID 22)
+17/04/22 20:36:41 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.125.1.127:55018 in memory (size: 2.5 KB, free: 33.2 GB)
+17/04/22 20:36:41 INFO BlockManager: Removing RDD 1
+17/04/22 20:36:41 INFO ContextCleaner: Cleaned RDD 1
+17/04/22 20:36:41 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.125.1.127:55018 in memory (size: 22.8 KB, free: 33.2 GB)
+17/04/22 20:36:51 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00009:0+26974463
+17/04/22 20:36:51 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00015:0+28469794
+17/04/22 20:36:56 INFO MemoryStore: Block rdd_3_1 stored as values in memory (estimated size 6.0 MB, free 32.0 GB)
+17/04/22 20:36:56 INFO BlockManagerInfo: Added rdd_3_1 in memory on 10.125.1.127:55018 (size: 6.0 MB, free: 33.2 GB)
+17/04/22 20:36:56 INFO MemoryStore: Block rdd_3_2 stored as values in memory (estimated size 17.2 MB, free 32.0 GB)
+17/04/22 20:36:56 INFO BlockManagerInfo: Added rdd_3_2 in memory on 10.125.1.127:55018 (size: 17.2 MB, free: 33.2 GB)
+17/04/22 20:36:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00010:0+28271053
+17/04/22 20:36:56 INFO MemoryStore: Block rdd_3_3 stored as values in memory (estimated size 32.9 MB, free 31.9 GB)
+17/04/22 20:36:56 INFO BlockManagerInfo: Added rdd_3_3 in memory on 10.125.1.127:55018 (size: 32.9 MB, free: 33.2 GB)
+17/04/22 20:36:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00011:0+28909383
+17/04/22 20:36:56 INFO MemoryStore: Block rdd_3_0 stored as values in memory (estimated size 3.5 MB, free 31.9 GB)
+17/04/22 20:36:56 INFO BlockManagerInfo: Added rdd_3_0 in memory on 10.125.1.127:55018 (size: 3.5 MB, free: 33.2 GB)
+17/04/22 20:54:13 INFO Executor: Finished task 1.0 in stage 1.0 (TID 21). 2498 bytes result sent to driver
+17/04/22 20:54:13 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 24, localhost, executor driver, partition 4, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:54:13 INFO Executor: Running task 4.0 in stage 1.0 (TID 24)
+17/04/22 20:54:13 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 21) in 1064934 ms on localhost (executor driver) (1/30)
+17/04/22 20:54:17 INFO Executor: Finished task 2.0 in stage 1.0 (TID 22). 2411 bytes result sent to driver
+17/04/22 20:54:17 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 25, localhost, executor driver, partition 5, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:54:17 INFO Executor: Running task 5.0 in stage 1.0 (TID 25)
+17/04/22 20:54:17 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 22) in 1069563 ms on localhost (executor driver) (2/30)
+17/04/22 20:54:23 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00016:0+32471004
+17/04/22 20:54:23 INFO MemoryStore: Block rdd_3_4 stored as values in memory (estimated size 57.4 MB, free 31.6 GB)
+17/04/22 20:54:23 INFO BlockManagerInfo: Added rdd_3_4 in memory on 10.125.1.127:55018 (size: 57.4 MB, free: 33.1 GB)
+17/04/22 20:54:25 INFO Executor: Finished task 0.0 in stage 1.0 (TID 20). 2411 bytes result sent to driver
+17/04/22 20:54:25 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 26, localhost, executor driver, partition 6, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:54:25 INFO Executor: Running task 6.0 in stage 1.0 (TID 26)
+17/04/22 20:54:25 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 20) in 1077008 ms on localhost (executor driver) (3/30)
+17/04/22 20:54:32 INFO Executor: Finished task 3.0 in stage 1.0 (TID 23). 2411 bytes result sent to driver
+17/04/22 20:54:32 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 27, localhost, executor driver, partition 7, PROCESS_LOCAL, 6845 bytes)
+17/04/22 20:54:32 INFO Executor: Running task 7.0 in stage 1.0 (TID 27)
+17/04/22 20:54:32 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 23) in 1084669 ms on localhost (executor driver) (4/30)
+17/04/22 20:54:33 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00008:0+26160295
+17/04/22 20:54:33 INFO MemoryStore: Block rdd_3_5 stored as values in memory (estimated size 7.9 MB, free 31.9 GB)
+17/04/22 20:54:33 INFO BlockManagerInfo: Added rdd_3_5 in memory on 10.125.1.127:55018 (size: 7.9 MB, free: 33.1 GB)
+17/04/22 20:54:41 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00004:0+32486249
+17/04/22 20:54:41 INFO MemoryStore: Block rdd_3_6 stored as values in memory (estimated size 7.0 MB, free 31.9 GB)
+17/04/22 20:54:41 INFO BlockManagerInfo: Added rdd_3_6 in memory on 10.125.1.127:55018 (size: 7.0 MB, free: 33.1 GB)
+17/04/22 20:54:42 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00002:0+31206753
+17/04/22 20:54:43 INFO MemoryStore: Block rdd_3_7 stored as values in memory (estimated size 16.9 MB, free 31.8 GB)
+17/04/22 20:54:43 INFO BlockManagerInfo: Added rdd_3_7 in memory on 10.125.1.127:55018 (size: 16.9 MB, free: 33.1 GB)
+17/04/22 21:10:39 INFO Executor: Finished task 5.0 in stage 1.0 (TID 25). 2411 bytes result sent to driver
+17/04/22 21:10:39 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 28, localhost, executor driver, partition 8, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:10:39 INFO Executor: Running task 8.0 in stage 1.0 (TID 28)
+17/04/22 21:10:39 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 25) in 981419 ms on localhost (executor driver) (5/30)
+17/04/22 21:10:46 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00003:0+33554432
+17/04/22 21:10:47 INFO MemoryStore: Block rdd_3_8 stored as values in memory (estimated size 26.5 MB, free 31.1 GB)
+17/04/22 21:10:47 INFO BlockManagerInfo: Added rdd_3_8 in memory on 10.125.1.127:55018 (size: 26.5 MB, free: 33.1 GB)
+17/04/22 21:15:02 INFO Executor: Finished task 7.0 in stage 1.0 (TID 27). 2411 bytes result sent to driver
+17/04/22 21:15:02 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 29, localhost, executor driver, partition 9, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:15:02 INFO Executor: Running task 9.0 in stage 1.0 (TID 29)
+17/04/22 21:15:02 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 27) in 1229169 ms on localhost (executor driver) (6/30)
+17/04/22 21:15:09 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00003:33554432+5054155
+17/04/22 21:15:09 INFO MemoryStore: Block rdd_3_9 stored as values in memory (estimated size 2.9 MB, free 31.0 GB)
+17/04/22 21:15:09 INFO BlockManagerInfo: Added rdd_3_9 in memory on 10.125.1.127:55018 (size: 2.9 MB, free: 33.1 GB)
+17/04/22 21:15:29 INFO Executor: Finished task 6.0 in stage 1.0 (TID 26). 2411 bytes result sent to driver
+17/04/22 21:15:29 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 30, localhost, executor driver, partition 10, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:15:29 INFO Executor: Running task 10.0 in stage 1.0 (TID 30)
+17/04/22 21:15:29 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 26) in 1264207 ms on localhost (executor driver) (7/30)
+17/04/22 21:15:36 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00006:0+34491790
+17/04/22 21:15:36 INFO MemoryStore: Block rdd_3_10 stored as values in memory (estimated size 11.7 MB, free 31.1 GB)
+17/04/22 21:15:36 INFO BlockManagerInfo: Added rdd_3_10 in memory on 10.125.1.127:55018 (size: 11.7 MB, free: 33.0 GB)
+17/04/22 21:15:46 INFO Executor: Finished task 4.0 in stage 1.0 (TID 24). 2411 bytes result sent to driver
+17/04/22 21:15:46 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 31, localhost, executor driver, partition 11, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:15:46 INFO Executor: Running task 11.0 in stage 1.0 (TID 31)
+17/04/22 21:15:46 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 24) in 1293089 ms on localhost (executor driver) (8/30)
+17/04/22 21:15:53 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00014:0+33554432
+17/04/22 21:15:53 INFO MemoryStore: Block rdd_3_11 stored as values in memory (estimated size 27.3 MB, free 31.2 GB)
+17/04/22 21:15:53 INFO BlockManagerInfo: Added rdd_3_11 in memory on 10.125.1.127:55018 (size: 27.3 MB, free: 33.0 GB)
+17/04/22 21:18:29 INFO Executor: Finished task 9.0 in stage 1.0 (TID 29). 2411 bytes result sent to driver
+17/04/22 21:18:29 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 32, localhost, executor driver, partition 12, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:18:29 INFO Executor: Running task 12.0 in stage 1.0 (TID 32)
+17/04/22 21:18:29 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 29) in 207893 ms on localhost (executor driver) (9/30)
+17/04/22 21:18:36 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00014:33554432+13925548
+17/04/22 21:18:36 INFO MemoryStore: Block rdd_3_12 stored as values in memory (estimated size 2.9 MB, free 30.4 GB)
+17/04/22 21:18:36 INFO BlockManagerInfo: Added rdd_3_12 in memory on 10.125.1.127:55018 (size: 2.9 MB, free: 33.0 GB)
+17/04/22 21:25:39 INFO Executor: Finished task 12.0 in stage 1.0 (TID 32). 2411 bytes result sent to driver
+17/04/22 21:25:39 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 33, localhost, executor driver, partition 13, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:25:39 INFO Executor: Running task 13.0 in stage 1.0 (TID 33)
+17/04/22 21:25:39 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 32) in 429993 ms on localhost (executor driver) (10/30)
+17/04/22 21:25:48 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00018:0+35177333
+17/04/22 21:25:48 INFO MemoryStore: Block rdd_3_13 stored as values in memory (estimated size 16.1 MB, free 30.4 GB)
+17/04/22 21:25:48 INFO BlockManagerInfo: Added rdd_3_13 in memory on 10.125.1.127:55018 (size: 16.1 MB, free: 33.0 GB)
+17/04/22 21:32:47 INFO Executor: Finished task 8.0 in stage 1.0 (TID 28). 2411 bytes result sent to driver
+17/04/22 21:32:47 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 34, localhost, executor driver, partition 14, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:32:47 INFO Executor: Running task 14.0 in stage 1.0 (TID 34)
+17/04/22 21:32:47 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 28) in 1328112 ms on localhost (executor driver) (11/30)
+17/04/22 21:32:54 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00013:0+33554432
+17/04/22 21:32:55 INFO MemoryStore: Block rdd_3_14 stored as values in memory (estimated size 33.8 MB, free 30.8 GB)
+17/04/22 21:32:55 INFO BlockManagerInfo: Added rdd_3_14 in memory on 10.125.1.127:55018 (size: 33.8 MB, free: 33.0 GB)
+17/04/22 21:38:02 INFO Executor: Finished task 10.0 in stage 1.0 (TID 30). 2411 bytes result sent to driver
+17/04/22 21:38:02 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 35, localhost, executor driver, partition 15, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:38:02 INFO Executor: Running task 15.0 in stage 1.0 (TID 35)
+17/04/22 21:38:02 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 30) in 1353458 ms on localhost (executor driver) (12/30)
+17/04/22 21:38:10 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00013:33554432+9036794
+17/04/22 21:38:10 INFO MemoryStore: Block rdd_3_15 stored as values in memory (estimated size 4.9 MB, free 28.5 GB)
+17/04/22 21:38:10 INFO BlockManagerInfo: Added rdd_3_15 in memory on 10.125.1.127:55018 (size: 4.9 MB, free: 33.0 GB)
+17/04/22 21:38:11 INFO Executor: Finished task 11.0 in stage 1.0 (TID 31). 2411 bytes result sent to driver
+17/04/22 21:38:11 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 36, localhost, executor driver, partition 16, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:38:11 INFO Executor: Running task 16.0 in stage 1.0 (TID 36)
+17/04/22 21:38:11 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 31) in 1344977 ms on localhost (executor driver) (13/30)
+17/04/22 21:38:19 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00012:0+33554432
+17/04/22 21:38:19 INFO MemoryStore: Block rdd_3_16 stored as values in memory (estimated size 9.3 MB, free 30.1 GB)
+17/04/22 21:38:19 INFO BlockManagerInfo: Added rdd_3_16 in memory on 10.125.1.127:55018 (size: 9.3 MB, free: 33.0 GB)
+17/04/22 21:44:04 INFO Executor: Finished task 15.0 in stage 1.0 (TID 35). 2411 bytes result sent to driver
+17/04/22 21:44:04 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 37, localhost, executor driver, partition 17, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:44:04 INFO Executor: Running task 17.0 in stage 1.0 (TID 37)
+17/04/22 21:44:04 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 35) in 361878 ms on localhost (executor driver) (14/30)
+17/04/22 21:44:12 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00012:33554432+15383296
+17/04/22 21:44:12 INFO MemoryStore: Block rdd_3_17 stored as values in memory (estimated size 4.9 MB, free 29.5 GB)
+17/04/22 21:44:12 INFO BlockManagerInfo: Added rdd_3_17 in memory on 10.125.1.127:55018 (size: 4.9 MB, free: 33.0 GB)
+17/04/22 21:47:25 INFO Executor: Finished task 13.0 in stage 1.0 (TID 33). 2411 bytes result sent to driver
+17/04/22 21:47:25 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 38, localhost, executor driver, partition 18, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:47:25 INFO Executor: Running task 18.0 in stage 1.0 (TID 38)
+17/04/22 21:47:25 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 33) in 1305312 ms on localhost (executor driver) (15/30)
+17/04/22 21:47:33 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00019:0+33554432
+17/04/22 21:47:33 INFO MemoryStore: Block rdd_3_18 stored as values in memory (estimated size 17.7 MB, free 31.0 GB)
+17/04/22 21:47:33 INFO BlockManagerInfo: Added rdd_3_18 in memory on 10.125.1.127:55018 (size: 17.7 MB, free: 32.9 GB)
+17/04/22 21:54:17 INFO Executor: Finished task 14.0 in stage 1.0 (TID 34). 2411 bytes result sent to driver
+17/04/22 21:54:17 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 39, localhost, executor driver, partition 19, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:54:17 INFO Executor: Running task 19.0 in stage 1.0 (TID 39)
+17/04/22 21:54:17 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 34) in 1289869 ms on localhost (executor driver) (16/30)
+17/04/22 21:54:18 INFO Executor: Finished task 17.0 in stage 1.0 (TID 37). 2411 bytes result sent to driver
+17/04/22 21:54:18 INFO TaskSetManager: Starting task 20.0 in stage 1.0 (TID 40, localhost, executor driver, partition 20, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:54:18 INFO Executor: Running task 20.0 in stage 1.0 (TID 40)
+17/04/22 21:54:18 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 37) in 613383 ms on localhost (executor driver) (17/30)
+17/04/22 21:54:25 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00019:33554432+16154645
+17/04/22 21:54:25 INFO MemoryStore: Block rdd_3_19 stored as values in memory (estimated size 40.4 MB, free 31.1 GB)
+17/04/22 21:54:25 INFO BlockManagerInfo: Added rdd_3_19 in memory on 10.125.1.127:55018 (size: 40.4 MB, free: 32.9 GB)
+17/04/22 21:54:41 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00001:0+33554432
+17/04/22 21:54:41 INFO MemoryStore: Block rdd_3_20 stored as values in memory (estimated size 97.7 MB, free 31.0 GB)
+17/04/22 21:54:41 INFO BlockManagerInfo: Added rdd_3_20 in memory on 10.125.1.127:55018 (size: 97.7 MB, free: 32.8 GB)
+17/04/22 21:57:48 INFO Executor: Finished task 16.0 in stage 1.0 (TID 36). 2411 bytes result sent to driver
+17/04/22 21:57:48 INFO TaskSetManager: Starting task 21.0 in stage 1.0 (TID 41, localhost, executor driver, partition 21, PROCESS_LOCAL, 6845 bytes)
+17/04/22 21:57:48 INFO Executor: Running task 21.0 in stage 1.0 (TID 41)
+17/04/22 21:57:48 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 36) in 1177283 ms on localhost (executor driver) (18/30)
+17/04/22 21:57:55 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00001:33554432+13563283
+17/04/22 21:57:55 INFO MemoryStore: Block rdd_3_21 stored as values in memory (estimated size 5.9 MB, free 31.3 GB)
+17/04/22 21:57:55 INFO BlockManagerInfo: Added rdd_3_21 in memory on 10.125.1.127:55018 (size: 5.9 MB, free: 32.8 GB)
+17/04/22 22:03:34 INFO Executor: Finished task 19.0 in stage 1.0 (TID 39). 2411 bytes result sent to driver
+17/04/22 22:03:34 INFO TaskSetManager: Starting task 22.0 in stage 1.0 (TID 42, localhost, executor driver, partition 22, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:03:34 INFO Executor: Running task 22.0 in stage 1.0 (TID 42)
+17/04/22 22:03:34 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 39) in 556925 ms on localhost (executor driver) (19/30)
+17/04/22 22:03:40 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00017:0+33554432
+17/04/22 22:03:41 INFO MemoryStore: Block rdd_3_22 stored as values in memory (estimated size 10.3 MB, free 30.4 GB)
+17/04/22 22:03:41 INFO BlockManagerInfo: Added rdd_3_22 in memory on 10.125.1.127:55018 (size: 10.3 MB, free: 32.8 GB)
+17/04/22 22:06:41 INFO Executor: Finished task 21.0 in stage 1.0 (TID 41). 2411 bytes result sent to driver
+17/04/22 22:06:41 INFO TaskSetManager: Starting task 23.0 in stage 1.0 (TID 43, localhost, executor driver, partition 23, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:06:41 INFO Executor: Running task 23.0 in stage 1.0 (TID 43)
+17/04/22 22:06:41 INFO TaskSetManager: Finished task 21.0 in stage 1.0 (TID 41) in 532882 ms on localhost (executor driver) (20/30)
+17/04/22 22:06:48 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00017:33554432+16908178
+17/04/22 22:06:49 INFO MemoryStore: Block rdd_3_23 stored as values in memory (estimated size 3.2 MB, free 30.4 GB)
+17/04/22 22:06:49 INFO BlockManagerInfo: Added rdd_3_23 in memory on 10.125.1.127:55018 (size: 3.2 MB, free: 32.8 GB)
+17/04/22 22:10:06 INFO Executor: Finished task 18.0 in stage 1.0 (TID 38). 2411 bytes result sent to driver
+17/04/22 22:10:06 INFO TaskSetManager: Starting task 24.0 in stage 1.0 (TID 44, localhost, executor driver, partition 24, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:10:06 INFO Executor: Running task 24.0 in stage 1.0 (TID 44)
+17/04/22 22:10:06 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 38) in 1361681 ms on localhost (executor driver) (21/30)
+17/04/22 22:10:14 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00000:0+33554432
+17/04/22 22:10:14 INFO MemoryStore: Block rdd_3_24 stored as values in memory (estimated size 12.1 MB, free 30.3 GB)
+17/04/22 22:10:14 INFO BlockManagerInfo: Added rdd_3_24 in memory on 10.125.1.127:55018 (size: 12.1 MB, free: 32.8 GB)
+17/04/22 22:15:46 INFO Executor: Finished task 20.0 in stage 1.0 (TID 40). 2411 bytes result sent to driver
+17/04/22 22:15:46 INFO TaskSetManager: Starting task 25.0 in stage 1.0 (TID 45, localhost, executor driver, partition 25, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:15:46 INFO Executor: Running task 25.0 in stage 1.0 (TID 45)
+17/04/22 22:15:46 INFO TaskSetManager: Finished task 20.0 in stage 1.0 (TID 40) in 1288265 ms on localhost (executor driver) (22/30)
+17/04/22 22:15:56 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00000:33554432+11833485
+17/04/22 22:15:56 INFO MemoryStore: Block rdd_3_25 stored as values in memory (estimated size 1791.6 KB, free 30.9 GB)
+17/04/22 22:15:56 INFO BlockManagerInfo: Added rdd_3_25 in memory on 10.125.1.127:55018 (size: 1791.6 KB, free: 32.8 GB)
+17/04/22 22:16:27 INFO Executor: Finished task 23.0 in stage 1.0 (TID 43). 2411 bytes result sent to driver
+17/04/22 22:16:27 INFO TaskSetManager: Starting task 26.0 in stage 1.0 (TID 46, localhost, executor driver, partition 26, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:16:27 INFO Executor: Running task 26.0 in stage 1.0 (TID 46)
+17/04/22 22:16:27 INFO TaskSetManager: Finished task 23.0 in stage 1.0 (TID 43) in 586429 ms on localhost (executor driver) (23/30)
+17/04/22 22:16:36 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00005:0+33554432
+17/04/22 22:16:36 INFO MemoryStore: Block rdd_3_26 stored as values in memory (estimated size 70.6 MB, free 30.9 GB)
+17/04/22 22:16:36 INFO BlockManagerInfo: Added rdd_3_26 in memory on 10.125.1.127:55018 (size: 70.6 MB, free: 32.7 GB)
+17/04/22 22:22:34 INFO Executor: Finished task 25.0 in stage 1.0 (TID 45). 2411 bytes result sent to driver
+17/04/22 22:22:34 INFO TaskSetManager: Starting task 27.0 in stage 1.0 (TID 47, localhost, executor driver, partition 27, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:22:34 INFO Executor: Running task 27.0 in stage 1.0 (TID 47)
+17/04/22 22:22:34 INFO TaskSetManager: Finished task 25.0 in stage 1.0 (TID 45) in 408535 ms on localhost (executor driver) (24/30)
+17/04/22 22:22:42 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00005:33554432+26038067
+17/04/22 22:22:42 INFO MemoryStore: Block rdd_3_27 stored as values in memory (estimated size 12.3 MB, free 30.2 GB)
+17/04/22 22:22:42 INFO BlockManagerInfo: Added rdd_3_27 in memory on 10.125.1.127:55018 (size: 12.3 MB, free: 32.7 GB)
+17/04/22 22:24:44 INFO Executor: Finished task 22.0 in stage 1.0 (TID 42). 2411 bytes result sent to driver
+17/04/22 22:24:44 INFO TaskSetManager: Starting task 28.0 in stage 1.0 (TID 48, localhost, executor driver, partition 28, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:24:44 INFO Executor: Running task 28.0 in stage 1.0 (TID 48)
+17/04/22 22:24:44 INFO TaskSetManager: Finished task 22.0 in stage 1.0 (TID 42) in 1270296 ms on localhost (executor driver) (25/30)
+17/04/22 22:24:51 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00007:0+33554432
+17/04/22 22:24:51 INFO MemoryStore: Block rdd_3_28 stored as values in memory (estimated size 12.5 MB, free 30.5 GB)
+17/04/22 22:24:51 INFO BlockManagerInfo: Added rdd_3_28 in memory on 10.125.1.127:55018 (size: 12.5 MB, free: 32.7 GB)
+17/04/22 22:31:00 INFO Executor: Finished task 24.0 in stage 1.0 (TID 44). 2411 bytes result sent to driver
+17/04/22 22:31:00 INFO TaskSetManager: Starting task 29.0 in stage 1.0 (TID 49, localhost, executor driver, partition 29, PROCESS_LOCAL, 6845 bytes)
+17/04/22 22:31:00 INFO Executor: Running task 29.0 in stage 1.0 (TID 49)
+17/04/22 22:31:00 INFO TaskSetManager: Finished task 24.0 in stage 1.0 (TID 44) in 1253453 ms on localhost (executor driver) (26/30)
+17/04/22 22:31:07 INFO HadoopRDD: Input split: file:/home/yitianl/8470/8470/project1/output/uniwordSequence/part-00007:33554432+16286375
+17/04/22 22:31:07 INFO MemoryStore: Block rdd_3_29 stored as values in memory (estimated size 15.0 MB, free 30.7 GB)
+17/04/22 22:31:07 INFO BlockManagerInfo: Added rdd_3_29 in memory on 10.125.1.127:55018 (size: 15.0 MB, free: 32.7 GB)
+17/04/22 22:38:22 INFO Executor: Finished task 26.0 in stage 1.0 (TID 46). 2411 bytes result sent to driver
+17/04/22 22:38:22 INFO TaskSetManager: Finished task 26.0 in stage 1.0 (TID 46) in 1314773 ms on localhost (executor driver) (27/30)
+17/04/22 22:38:50 INFO Executor: Finished task 27.0 in stage 1.0 (TID 47). 2411 bytes result sent to driver
+17/04/22 22:38:50 INFO TaskSetManager: Finished task 27.0 in stage 1.0 (TID 47) in 975305 ms on localhost (executor driver) (28/30)
+17/04/22 22:41:25 INFO Executor: Finished task 29.0 in stage 1.0 (TID 49). 2411 bytes result sent to driver
+17/04/22 22:41:25 INFO TaskSetManager: Finished task 29.0 in stage 1.0 (TID 49) in 624825 ms on localhost (executor driver) (29/30)
+17/04/22 22:46:08 INFO Executor: Finished task 28.0 in stage 1.0 (TID 48). 2411 bytes result sent to driver
+17/04/22 22:46:08 INFO TaskSetManager: Finished task 28.0 in stage 1.0 (TID 48) in 1284013 ms on localhost (executor driver) (30/30)
+17/04/22 22:46:08 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+17/04/22 22:46:08 INFO DAGScheduler: ShuffleMapStage 1 (filter at CosIndex.java:201) finished in 7780.194 s
+17/04/22 22:46:08 INFO DAGScheduler: looking for newly runnable stages
+17/04/22 22:46:08 INFO DAGScheduler: running: Set()
+17/04/22 22:46:08 INFO DAGScheduler: waiting: Set(ResultStage 2)
+17/04/22 22:46:08 INFO DAGScheduler: failed: Set()
+17/04/22 22:46:08 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[13] at saveAsTextFile at CosIndex.java:218), which has no missing parents
+17/04/22 22:46:08 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 73.6 KB, free 31.4 GB)
+17/04/22 22:46:08 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 26.7 KB, free 31.4 GB)
+17/04/22 22:46:08 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.125.1.127:55018 (size: 26.7 KB, free: 32.7 GB)
+17/04/22 22:46:08 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:996
+17/04/22 22:46:08 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[13] at saveAsTextFile at CosIndex.java:218)
+17/04/22 22:46:08 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+17/04/22 22:46:08 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 50, localhost, executor driver, partition 0, ANY, 6645 bytes)
+17/04/22 22:46:08 INFO Executor: Running task 0.0 in stage 2.0 (TID 50)
+17/04/22 22:46:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/22 22:46:08 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:08 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+17/04/22 22:46:13 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:13 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:46:21 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:21 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:46:27 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:46:34 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:46:39 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:46:46 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:46:50 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:50 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:46:59 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:46:59 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:47:03 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:03 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:47:09 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:09 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:47:15 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:15 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:47:22 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:22 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 41 ms
+17/04/22 22:47:28 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:47:34 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:47:40 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece19 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece46 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece172 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece130 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece145 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece151 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece10 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece139 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece166 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece124 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece25 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece31 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece4 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece93 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece106 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece133 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece7 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece28 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece13 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece81 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece75 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece127 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece154 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.7 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece96 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece112 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece148 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece100 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece109 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece136 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece90 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece84 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece99 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece115 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece57 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece121 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece63 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece78 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece1 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece45 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece72 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece39 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece118 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece51 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece103 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece171 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece66 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece87 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece48 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.8 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece180 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece33 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece69 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece27 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece60 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece54 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece153 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece168 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece174 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece21 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece177 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece135 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece162 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece183 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece156 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece15 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece141 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece42 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece36 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece9 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece30 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece138 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece144 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece92 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece18 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 32.9 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece165 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece86 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece123 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece24 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece150 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece3 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece159 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece117 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece6 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece147 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece89 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece105 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece111 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece95 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece12 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece68 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece80 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece132 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece74 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece126 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece108 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece83 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece77 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece41 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece129 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece56 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.0 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece114 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece182 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece98 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece120 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece62 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece102 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece38 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece164 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece50 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece59 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece185 on 10.125.1.127:55018 in memory (size: 1596.9 KB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece44 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece65 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece23 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece170 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece179 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece71 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece173 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece146 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece47 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece5 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece152 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece53 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece11 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece26 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece32 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.1 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece167 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece35 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece155 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece97 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece14 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece176 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece140 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece149 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece134 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece161 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece8 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece20 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece128 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece29 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece122 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece2 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece116 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece17 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece143 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece85 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece101 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece70 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece158 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece91 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece137 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.2 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece79 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece131 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece88 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece104 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece110 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece119 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece125 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece94 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece52 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece73 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece67 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece107 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece49 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece160 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece175 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece61 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece113 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece34 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece82 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece40 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece55 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece169 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece181 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece76 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece178 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece184 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.3 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece142 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece43 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece157 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece64 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece58 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece22 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece16 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece37 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO BlockManagerInfo: Removed broadcast_3_piece163 on 10.125.1.127:55018 in memory (size: 4.0 MB, free: 33.4 GB)
+17/04/22 22:47:55 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:47:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:01 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:01 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:07 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:12 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:12 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:19 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:19 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:48:26 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:33 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:33 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:48:39 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:42 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:47 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:52 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:52 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:48:57 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:48:57 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:05 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:05 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:09 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:09 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:16 INFO FileOutputCommitter: Saved output of task 'attempt_20170422203613_0002_m_000000_50' to file:/home/yitianl/8470/8470/project1/output/cos/_temporary/0/task_20170422203613_0002_m_000000
+17/04/22 22:49:16 INFO SparkHadoopMapRedUtil: attempt_20170422203613_0002_m_000000_50: Committed
+17/04/22 22:49:16 INFO Executor: Finished task 0.0 in stage 2.0 (TID 50). 1921 bytes result sent to driver
+17/04/22 22:49:16 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 50) in 187705 ms on localhost (executor driver) (1/1)
+17/04/22 22:49:16 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+17/04/22 22:49:16 INFO DAGScheduler: ResultStage 2 (saveAsTextFile at CosIndex.java:218) finished in 187.707 s
+17/04/22 22:49:16 INFO DAGScheduler: Job 1 finished: saveAsTextFile at CosIndex.java:218, took 7982.835057 s
+17/04/22 22:49:16 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/22 22:49:16 INFO SparkContext: Starting job: saveAsTextFile at CosIndex.java:237
+17/04/22 22:49:16 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 931 bytes
+17/04/22 22:49:16 INFO DAGScheduler: Got job 2 (saveAsTextFile at CosIndex.java:237) with 1 output partitions
+17/04/22 22:49:16 INFO DAGScheduler: Final stage: ResultStage 4 (saveAsTextFile at CosIndex.java:237)
+17/04/22 22:49:16 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+17/04/22 22:49:16 INFO DAGScheduler: Missing parents: List()
+17/04/22 22:49:16 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[15] at saveAsTextFile at CosIndex.java:237), which has no missing parents
+17/04/22 22:49:16 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 73.9 KB, free 33.4 GB)
+17/04/22 22:49:16 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 26.8 KB, free 33.4 GB)
+17/04/22 22:49:16 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.125.1.127:55018 (size: 26.8 KB, free: 33.4 GB)
+17/04/22 22:49:16 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:996
+17/04/22 22:49:16 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[15] at saveAsTextFile at CosIndex.java:237)
+17/04/22 22:49:16 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+17/04/22 22:49:16 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 51, localhost, executor driver, partition 0, ANY, 6645 bytes)
+17/04/22 22:49:16 INFO Executor: Running task 0.0 in stage 4.0 (TID 51)
+17/04/22 22:49:16 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/22 22:49:16 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:16 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:49:22 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:22 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:29 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:33 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 10.125.1.127:55018 in memory (size: 26.7 KB, free: 33.4 GB)
+17/04/22 22:49:39 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:46 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:52 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:52 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:49:59 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:49:59 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:50:03 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:03 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:50:12 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:12 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:50:17 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:50:23 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:23 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:50:30 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:30 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:50:38 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:38 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:50:44 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:44 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:50:51 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:50:57 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:50:57 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:51:04 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:04 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:51:11 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:11 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:51:17 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:51:22 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:22 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:51:36 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:51:43 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:51:51 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:51:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:00 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:00 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+17/04/22 22:52:08 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:08 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:14 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:14 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:22 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:22 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:30 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:30 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:42 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:47 INFO ShuffleBlockFetcherIterator: Getting 30 non-empty blocks out of 30 blocks
+17/04/22 22:52:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+17/04/22 22:52:54 INFO FileOutputCommitter: Saved output of task 'attempt_20170422224916_0004_m_000000_51' to file:/home/yitianl/8470/8470/project1/output/sortedCos/_temporary/0/task_20170422224916_0004_m_000000
+17/04/22 22:52:54 INFO SparkHadoopMapRedUtil: attempt_20170422224916_0004_m_000000_51: Committed
+17/04/22 22:52:54 INFO Executor: Finished task 0.0 in stage 4.0 (TID 51). 1921 bytes result sent to driver
+17/04/22 22:52:54 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 51) in 218419 ms on localhost (executor driver) (1/1)
+17/04/22 22:52:54 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+17/04/22 22:52:54 INFO DAGScheduler: ResultStage 4 (saveAsTextFile at CosIndex.java:237) finished in 218.419 s
+17/04/22 22:52:54 INFO DAGScheduler: Job 2 finished: saveAsTextFile at CosIndex.java:237, took 218.456974 s
+17/04/22 22:52:54 INFO SparkContext: Invoking stop() from shutdown hook
+17/04/22 22:52:54 INFO SparkUI: Stopped Spark web UI at http://10.125.1.127:4040
+17/04/22 22:52:54 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/04/22 22:52:55 INFO MemoryStore: MemoryStore cleared
+17/04/22 22:52:55 INFO BlockManager: BlockManager stopped
+17/04/22 22:52:55 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/04/22 22:52:55 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/04/22 22:52:55 INFO SparkContext: Successfully stopped SparkContext
+17/04/22 22:52:55 INFO ShutdownHookManager: Shutdown hook called
+17/04/22 22:52:55 INFO ShutdownHookManager: Deleting directory /tmp/spark-84f0deb4-4cac-4636-aeb6-b407d98ac4a1

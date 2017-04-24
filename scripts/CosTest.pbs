@@ -1,0 +1,10 @@
+#PBS -N Cosine
+#PBS -l select=10:ncpus=20:mem=64gb,walltime=24:00:00
+
+addslavestospark
+spark-start
+cd /home/yitianl/8470/8470/project1/
+
+spark-submit-project1 
+
+echo Finished from `hostname`

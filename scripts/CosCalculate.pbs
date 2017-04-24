@@ -1,0 +1,68 @@
+#PBS -N Cosine
+#PBS -l select=64:ncpus=4:mem=8gb,walltime=24:00:00
+
+addslavestospark
+spark-start
+cd /home/yitianl/8470/8470/project1/
+
+spark-submit-project1 00000
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part0
+
+spark-submit-project1 00001
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part1
+
+spark-submit-project1 00002
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part2
+
+spark-submit-project1 00003
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part2
+
+spark-submit-project1 00004
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part4
+
+spark-submit-project1 00005
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part5
+
+spark-submit-project1 00006
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part6
+
+spark-submit-project1 00007
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part7
+
+spark-submit-project1 00008
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part8
+
+spark-submit-project1 00009
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part9
+
+spark-submit-project1 00010
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part10
+
+spark-submit-project1 00011
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part11
+
+spark-submit-project1 00012
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part12
+
+spark-submit-project1 00013
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part13
+
+spark-submit-project1 00014
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part14
+
+spark-submit-project1 00015
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part15
+
+spark-submit-project1 00016
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part16
+
+spark-submit-project1 00017
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part17
+
+spark-submit-project1 00018
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part18
+
+spark-submit-project1 00019
+mv /home/yitianl/8470/8470/project1/output/cos /home/yitianl/8470/8470/project1/output/CosIndexFile/Part19
+
+echo Finished from `hostname`

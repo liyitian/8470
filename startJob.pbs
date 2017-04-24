@@ -1,0 +1,8 @@
+#PBS -N project1
+#PBS -l select=64:ncpus=4:mem=8gb,walltime=01:00:00
+
+addslavestospark
+spark-start
+cd /home/yitianl/8470/8470/project1/
+spark-submit-project1  RankedIndex
+echo Finished from `hostname`

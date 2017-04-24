@@ -1,0 +1,187 @@
+starting org.apache.spark.deploy.master.Master, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.master.Master-1-node0041.out
+node0490.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0490.out
+node0338.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0338.out
+node0513.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0513.out
+node0581.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0581.out
+node0346.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0346.out
+node0009.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0009.out
+node0014.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0014.out
+node0404.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0404.out
+node0151.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0151.out
+node0584.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0584.out
+node0002.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0002.out
+node0577.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0577.out
+node0401.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0401.out
+node0340.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0340.out
+node0492.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0492.out
+node0339.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0339.out
+node0043.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0043.out
+node0337.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0337.out
+node0397.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0397.out
+node0493.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0493.out
+node0491.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0491.out
+node0343.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0343.out
+node0578.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0578.out
+node0041.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0041.out
+node0221.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0221.out
+node0408.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0408.out
+node0406.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0406.out
+node0391.palmetto.clemson.edu: Warning: Permanently added 'node0391.palmetto.clemson.edu,10.125.2.132' (RSA) to the list of known hosts.
+node0391.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0391.out
+node0427.palmetto.clemson.edu: Warning: Permanently added 'node0427.palmetto.clemson.edu,10.125.2.168' (RSA) to the list of known hosts.
+node0427.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0427.out
+node0427.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0427.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0427.out
+node0456.palmetto.clemson.edu: Warning: Permanently added 'node0456.palmetto.clemson.edu,10.125.2.197' (RSA) to the list of known hosts.
+node0456.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0456.out
+node0345.palmetto.clemson.edu: Warning: Permanently added 'node0345.palmetto.clemson.edu,10.125.2.86' (RSA) to the list of known hosts.
+node0345.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0345.out
+node0457.palmetto.clemson.edu: Warning: Permanently added 'node0457.palmetto.clemson.edu,10.125.2.198' (RSA) to the list of known hosts.
+node0457.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0457.out
+node0452.palmetto.clemson.edu: Warning: Permanently added 'node0452.palmetto.clemson.edu,10.125.2.193' (RSA) to the list of known hosts.
+node0452.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0452.out
+node0121.palmetto.clemson.edu: Warning: Permanently added 'node0121.palmetto.clemson.edu,10.125.1.121' (RSA) to the list of known hosts.
+node0121.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0121.out
+node0454.palmetto.clemson.edu: Warning: Permanently added 'node0454.palmetto.clemson.edu,10.125.2.195' (RSA) to the list of known hosts.
+node0454.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0454.out
+node0443.palmetto.clemson.edu: Warning: Permanently added 'node0443.palmetto.clemson.edu,10.125.2.184' (RSA) to the list of known hosts.
+node0443.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0443.out
+node0442.palmetto.clemson.edu: Warning: Permanently added 'node0442.palmetto.clemson.edu,10.125.2.183' (RSA) to the list of known hosts.
+node0442.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0442.out
+node0413.palmetto.clemson.edu: Warning: Permanently added 'node0413.palmetto.clemson.edu,10.125.2.154' (RSA) to the list of known hosts.
+node0413.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0413.out
+node0413.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0413.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0413.out
+node0431.palmetto.clemson.edu: Warning: Permanently added 'node0431.palmetto.clemson.edu,10.125.2.172' (RSA) to the list of known hosts.
+node0431.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0431.out
+node0431.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0431.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0431.out
+node0412.palmetto.clemson.edu: Warning: Permanently added 'node0412.palmetto.clemson.edu,10.125.2.153' (RSA) to the list of known hosts.
+node0412.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0412.out
+node0412.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0412.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0412.out
+node0219.palmetto.clemson.edu: Warning: Permanently added 'node0219.palmetto.clemson.edu,10.125.1.219' (RSA) to the list of known hosts.
+node0219.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0219.out
+node0423.palmetto.clemson.edu: Warning: Permanently added 'node0423.palmetto.clemson.edu,10.125.2.164' (RSA) to the list of known hosts.
+node0423.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0423.out
+node0423.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0423.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0423.out
+node0416.palmetto.clemson.edu: Warning: Permanently added 'node0416.palmetto.clemson.edu,10.125.2.157' (RSA) to the list of known hosts.
+node0416.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0416.out
+node0416.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0416.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0416.out
+node0460.palmetto.clemson.edu: Warning: Permanently added 'node0460.palmetto.clemson.edu,10.125.2.201' (RSA) to the list of known hosts.
+node0460.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0460.out
+node0450.palmetto.clemson.edu: Warning: Permanently added 'node0450.palmetto.clemson.edu,10.125.2.191' (RSA) to the list of known hosts.
+node0450.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0450.out
+node0415.palmetto.clemson.edu: Warning: Permanently added 'node0415.palmetto.clemson.edu,10.125.2.156' (RSA) to the list of known hosts.
+node0415.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0415.out
+node0415.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0415.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0415.out
+node0419.palmetto.clemson.edu: Warning: Permanently added 'node0419.palmetto.clemson.edu,10.125.2.160' (RSA) to the list of known hosts.
+node0419.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0419.out
+node0419.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0419.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0419.out
+node0428.palmetto.clemson.edu: Warning: Permanently added 'node0428.palmetto.clemson.edu,10.125.2.169' (RSA) to the list of known hosts.
+node0428.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0428.out
+node0428.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0428.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0428.out
+node0418.palmetto.clemson.edu: Warning: Permanently added 'node0418.palmetto.clemson.edu,10.125.2.159' (RSA) to the list of known hosts.
+node0418.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0418.out
+node0418.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0418.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0418.out
+node0414.palmetto.clemson.edu: Warning: Permanently added 'node0414.palmetto.clemson.edu,10.125.2.155' (RSA) to the list of known hosts.
+node0414.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0414.out
+node0414.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0414.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0414.out
+node0425.palmetto.clemson.edu: Warning: Permanently added 'node0425.palmetto.clemson.edu,10.125.2.166' (RSA) to the list of known hosts.
+node0425.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0425.out
+node0425.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0425.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0425.out
+node0420.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0420.out
+node0420.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0420.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0420.out
+node0421.palmetto.clemson.edu: Warning: Permanently added 'node0421.palmetto.clemson.edu,10.125.2.162' (RSA) to the list of known hosts.
+node0421.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0421.out
+node0421.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0421.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0421.out
+node0432.palmetto.clemson.edu: Warning: Permanently added 'node0432.palmetto.clemson.edu,10.125.2.173' (RSA) to the list of known hosts.
+node0432.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0432.out
+node0432.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0432.palmetto.clemson.edu:   Spark Command: /home/yitianl/software/jdk1.8.0_121/bin/java -cp /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/conf/:/home/yitianl/software/spark-2.1.0-bin-hadoop2.7/jars/*:/home/yitianl/8470/mycluster-conf- -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0432.palmetto.clemson.edu:   ========================================
+node0432.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0432.out
+node0439.palmetto.clemson.edu: Warning: Permanently added 'node0439.palmetto.clemson.edu,10.125.2.180' (RSA) to the list of known hosts.
+node0439.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0439.out
+node0439.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0439.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0439.out
+node0440.palmetto.clemson.edu: Warning: Permanently added 'node0440.palmetto.clemson.edu,10.125.2.181' (RSA) to the list of known hosts.
+node0440.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0440.out
+node0440.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0440.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0440.out
+node0453.palmetto.clemson.edu: Warning: Permanently added 'node0453.palmetto.clemson.edu,10.125.2.194' (RSA) to the list of known hosts.
+node0453.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0453.out
+node0417.palmetto.clemson.edu: Warning: Permanently added 'node0417.palmetto.clemson.edu,10.125.2.158' (RSA) to the list of known hosts.
+node0417.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0417.out
+node0417.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0417.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0417.out
+node0438.palmetto.clemson.edu: Warning: Permanently added 'node0438.palmetto.clemson.edu,10.125.2.179' (RSA) to the list of known hosts.
+node0438.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0438.out
+node0438.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0438.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0438.out
+node0424.palmetto.clemson.edu: Warning: Permanently added 'node0424.palmetto.clemson.edu,10.125.2.165' (RSA) to the list of known hosts.
+node0424.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0424.out
+node0424.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0424.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0424.out
+node0422.palmetto.clemson.edu: Warning: Permanently added 'node0422.palmetto.clemson.edu,10.125.2.163' (RSA) to the list of known hosts.
+node0422.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0422.out
+node0422.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0422.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0422.out
+node0426.palmetto.clemson.edu: Warning: Permanently added 'node0426.palmetto.clemson.edu,10.125.2.167' (RSA) to the list of known hosts.
+node0426.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0426.out
+node0426.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0426.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0426.out
+node0435.palmetto.clemson.edu: Warning: Permanently added 'node0435.palmetto.clemson.edu,10.125.2.176' (RSA) to the list of known hosts.
+node0435.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0435.out
+node0435.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0435.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0435.out
+node0499.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0499.out
+node0499.palmetto.clemson.edu: failed to launch: nice -n 0 /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-class org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://node0041.palmetto.clemson.edu:7077
+node0499.palmetto.clemson.edu: full log in /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0499.out
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Finished from node0041
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=512gb,ncpus=256,walltime=24:00:00
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cpupercent=407,cput=34:18:47,mem=8291216kb,ncpus=256,vmem=21283088kb,walltime=08:50:28
+ 
+ 

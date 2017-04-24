@@ -1,0 +1,10 @@
+#PBS -N BMCalculate
+#PBS -l select=10:ncpus=20:mem=64gb,walltime=24:00:00
+
+addslavestospark
+spark-start
+cd /home/yitianl/8470/8470/project1/
+
+/home/yitianl/software/spark-2.1.0-bin-hadoop2.7/bin/spark-submit --class BM25Calculator --master spark://`hostname`:6066 --deploy-mode client --driver-memory 64G --executor-memory 64G --num-executors 10   /home/yitianl/8470/8470/project1/target/project1-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+echo Finished from `hostname`

@@ -1,0 +1,29 @@
+starting org.apache.spark.deploy.master.Master, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.master.Master-1-node0127.out
+node1009.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node1009.out
+node0879.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0879.out
+node0262.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0262.out
+node0767.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0767.out
+node1508.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node1508.out
+node0011.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0011.out
+node1541.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node1541.out
+node1509.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node1509.out
+node0127.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node0127.out
+node1511.palmetto.clemson.edu: starting org.apache.spark.deploy.worker.Worker, logging to /home/yitianl/software/spark-2.1.0-bin-hadoop2.7/logs/spark-yitianl-org.apache.spark.deploy.worker.Worker-1-node1511.out
+Success!
+Finished from node0127
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=640gb,ncpus=200,walltime=24:00:00
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cpupercent=472,cput=09:01:59,mem=52969980kb,ncpus=200,vmem=85364708kb,walltime=02:17:27
+ 
+ 

@@ -1,0 +1,68 @@
+#PBS -N BM25
+#PBS -l select=64:ncpus=4:mem=8gb,walltime=24:00:00
+
+addslavestospark
+spark-start
+cd /home/yitianl/8470/8470/project1/
+
+spark-submit-project1 00000
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part0
+
+spark-submit-project1 00001
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part1
+
+spark-submit-project1 00002
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part2
+
+spark-submit-project1 00003
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part3
+
+spark-submit-project1 00004
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part4
+
+spark-submit-project1 00005
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part5
+
+spark-submit-project1 00006
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part6
+
+spark-submit-project1 00007
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part7
+
+spark-submit-project1 00008
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part8
+
+spark-submit-project1 00009
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part9
+
+spark-submit-project1 00010
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part10
+
+spark-submit-project1 00011
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part11
+
+spark-submit-project1 00012
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part12
+
+spark-submit-project1 00013
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part13
+
+spark-submit-project1 00014
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part14
+
+spark-submit-project1 00015
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part15
+
+spark-submit-project1 00016
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part16
+
+spark-submit-project1 00017
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part17
+
+spark-submit-project1 00018
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part18
+
+spark-submit-project1 00019
+mv /home/yitianl/8470/8470/project1/output/BM25 /home/yitianl/8470/8470/project1/output/RankIndexFile/Part19
+
+echo Finished from `hostname`
