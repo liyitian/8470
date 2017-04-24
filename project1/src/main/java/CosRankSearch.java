@@ -6,14 +6,7 @@ import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFlatMapFunction;
 import org.apache.spark.api.java.function.PairFunction;
-import org.apache.spark.sql.Dataset;
-import org.apache.spark.sql.Row;
-import org.apache.spark.sql.RowFactory;
-import org.apache.spark.sql.SQLContext;
-import org.apache.spark.sql.catalyst.expressions.In;
-import org.apache.spark.sql.types.DataTypes;
-import org.apache.spark.sql.types.StructField;
-import org.apache.spark.sql.types.StructType;
+import org.codehaus.janino.Java;
 import scala.Tuple2;
 
 import java.util.ArrayList;
@@ -28,13 +21,13 @@ import java.util.List;
 /**
  * Created by tiger on 4/12/16.
  */
-public class RankSearch
+public class CosRankSearch
 {
 
     private SparkConf config;
     private JavaSparkContext context;
 
-    public RankSearch()
+    public CosRankSearch()
     {
 
         // set up Spark
@@ -54,7 +47,7 @@ public class RankSearch
 
     public static void main(final String[] args) {
         // set up and load file
-        RankSearch rs = new RankSearch();
+        CosRankSearch rs = new CosRankSearch();
 //        final Loader loader = new Loader();
         // transform the data into block entries
 
@@ -79,8 +72,8 @@ public class RankSearch
 //        String inDirectory = "user/yli25/data/data";
 //        String outDirectory = "user/yli25/output";
 
-        String inDirectory = "output/filteredBM25";
-        String outDirectory = "output/bm25result";
+        String inDirectory = "output/filteredCos";
+        String outDirectory = "output/cosresult";
 
                 rdd = rs.loadData(inDirectory + "/part-*");
 
@@ -105,8 +98,8 @@ public class RankSearch
             }
         });
 
-        JavaPairRDD<Integer, RankInfo> idRank = wordIdRank.flatMapToPair(new PairFlatMapFunction<Tuple2<String, String>, Integer, RankInfo>() {
-            public Iterator<Tuple2<Integer, RankInfo>> call(Tuple2<String, String> stringStringTuple2) throws Exception {
+        JavaPairRDD<Integer, ArrayList<WordInfo>> idWordList = wordIdRank.flatMapToPair(new PairFlatMapFunction<Tuple2<String, String>, Integer, ArrayList<WordInfo>>() {
+            public Iterator<Tuple2<Integer, ArrayList<WordInfo>>> call(Tuple2<String, String> stringStringTuple2) throws Exception {
 
                 //alamosa,WordInfo{word='alamosa',
                 //14.293967110378958, docRank=RankInfo{id=757478,rank=17.98570241495611,headline='Zions Bancorp to buy Sky Valley Bank.'}
@@ -120,14 +113,18 @@ public class RankSearch
                     idf=0.0;
                 else
                     idf = Double.parseDouble(ele[0].trim());
+
+
                 //id=757478,rank=17.98570241495611,headline='Zions Bancorp to buy Sky Valley Bank.'}
                 //id rank headline ...
                 String[] docrank = elements[1].split("(RankInfo\\{)");
-                WordInfo wi = new WordInfo();
-                ArrayList<Tuple2<Integer, RankInfo>> list = new ArrayList<Tuple2<Integer, RankInfo>>();
+
+
+                ArrayList<Tuple2<Integer, ArrayList<WordInfo>>> list = new ArrayList<Tuple2<Integer,  ArrayList<WordInfo>>>();
                 int i=0;
                 for(String dr:docrank){
                     if(i==0){i++;continue;}
+                    ArrayList<WordInfo> wordlist = new ArrayList<WordInfo>();
                     RankInfo ri = new RankInfo();
                     String[] rankelement = dr.trim().replaceAll("('})","").split("(,headline=')");
                     //id=757478,rank=17.98570241495611
@@ -139,31 +136,115 @@ public class RankSearch
                         headline="";
                     else
                         headline = rankelement[1];
-
+                    WordInfo wi = new WordInfo();
+                    wi.setIdf(idf);
+                    wi.setWord(name);
+                    ArrayList<RankInfo> ranklist = new ArrayList<RankInfo>();
                     ri.setId(id);
                     ri.setRank(rank);
                     ri.setHeadline(headline.replaceAll(",",""));
-                    list.add(new Tuple2<Integer, RankInfo>(id, ri));
+                    ranklist.add(ri);
+                    wi.setDocRank(ranklist);
+                    wordlist.add(wi);
+                    list.add(new Tuple2<Integer,  ArrayList<WordInfo>>(id, wordlist));
                 }
 
                 return list.iterator();
+
             }
-        }).reduceByKey(new Function2<RankInfo, RankInfo, RankInfo>() {
-            public RankInfo call(RankInfo rankInfo, RankInfo rankInfo2) throws Exception {
-                double totalrank = rankInfo.getRank()+rankInfo2.getRank();
-                rankInfo.setRank(totalrank);
-                return rankInfo;
+        }).reduceByKey(new Function2<ArrayList<WordInfo>, ArrayList<WordInfo>, ArrayList<WordInfo>>() {
+            public ArrayList<WordInfo> call(ArrayList<WordInfo> wordInfos, ArrayList<WordInfo> wordInfos2) throws Exception {
+                wordInfos.addAll(wordInfos2);
+                return wordInfos;
             }
         });
 
-        final JavaPairRDD<Double, String> rankId = idRank.mapToPair(new PairFunction<Tuple2<Integer, RankInfo>, Double, String>() {
-            public Tuple2<Double, String> call(Tuple2<Integer, RankInfo> integerDoubleTuple2) throws Exception {
 
-                String s = integerDoubleTuple2._2.getId()+":"+integerDoubleTuple2._2.getHeadline();
-                return new Tuple2<Double, String>(integerDoubleTuple2._2.getRank()/2.0, s);
+
+
+        final JavaPairRDD<Double, String> rankId = idWordList.mapToPair(new PairFunction<Tuple2<Integer, ArrayList<WordInfo>>, Double, String>() {
+            public Tuple2<Double, String> call(Tuple2<Integer, ArrayList<WordInfo>> integerArrayListTuple2) throws Exception {
+                int id = integerArrayListTuple2._1;
+
+                ArrayList<Tuple2<Double, Double>> qd = new ArrayList<Tuple2<Double, Double>>();
+
+                String headline = "";
+
+                for(WordInfo wi:integerArrayListTuple2._2){
+                    double idf = wi.getIdf();
+                    String word = wi.getWord();
+                    RankInfo ri = wi.getDocRank().get(0);
+                    double tfidf = ri.getRank();
+                    headline = ri.getHeadline().replaceAll("(&amp;)","");
+                    int count=0;
+                    for(String w : input){
+                        if(w.equals(word)) {
+                            count++;
+                        }
+                    }
+
+                    for(String w : input){
+                        if(w.equals(word)) {
+                            double tf = count;
+//                            double tf_n = tf/input.length;
+                            double tf_n = 1 + Math.log(tf);
+                            double qtfidf = (tf_n) * idf;
+                            qd.add(new Tuple2<Double, Double>(qtfidf, tfidf));
+                        }
+                    }
+                }
+                double dot = 0.0;
+                double q = 0.0;
+                double d = 0.0;
+                double finaltfidf = 0.0;
+                for(Tuple2<Double,Double> tmp:qd){
+                    dot+=(tmp._1*tmp._2);
+                    q+= (tmp._1*tmp._1);
+                    d+= (tmp._2*tmp._2);
+                    finaltfidf+=tmp._2;
+                }
+
+
+
+                q = Math.sqrt(q);
+                d = Math.sqrt(d);
+
+                double cosqd = dot/(q*d);
+                String s = integerArrayListTuple2._1 +","+ headline;
+//                return new Tuple2<Double, String>(integerArrayListTuple2._2.get(0).getDocRank().get(0).getRank(), s);
+                return new Tuple2<Double, String>(finaltfidf/2.0, s);
+
             }
-        }).sortByKey(false);
+        }).sortByKey(false)
+//                .filter(new Function<Tuple2<Double, String>, Boolean>() {
+//            public Boolean call(Tuple2<Double, String> doubleStringTuple2) throws Exception {
+//
+//                StringBuilder s = new StringBuilder();
+//                String s2 = doubleStringTuple2._2.toLowerCase();
+//                String s3 = s2.replaceAll("\\."," ");
+//                String s4 = input[0].substring(0,1)+" "+input[1].substring(0,1)+" ";
+//                for(String w : input){
+//                    s.append(" "+w);
+//                }
+//
+//                if(s2.contains(s)||s3.contains(s4)
+//                        ||s2.contains(input[0])
+//                        ||s2.contains(input[1])
+//                        )
+//                    return true;
+//                else
+//                    return false;
+//
+//            }
+//        })
+    ;
 
+//        List<Tuple2<String, String>> topRecords = rankId.mapToPair(new PairFunction<Tuple2<Double,String>, String, String>() {
+//            public Tuple2<String, String> call(Tuple2<Double, String> doubleStringTuple2) throws Exception {
+//
+//                return new Tuple2<String, String>("",doubleStringTuple2._2);
+//            }
+//        }).take(20);
         List<Tuple2<Double, String>> topRecords = rankId.take(20);
 
 
@@ -172,7 +253,7 @@ public class RankSearch
         System.out.println("top records:" + t);
 
         JavaRDD<Tuple2<Double, String>> outputRdd = rs.context.parallelize(topRecords).coalesce(1);
-        outputRdd.saveAsTextFile(outDirectory+"/rankSearchResult");
+        outputRdd.saveAsTextFile(outDirectory);
 
         System.out.println("Success!");
     }
