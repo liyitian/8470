@@ -40,18 +40,11 @@ public class UniIndex
     public static void main(String[] args) {
         // set up and load file
         UniIndex bss = new UniIndex();
-//        final Loader loader = new Loader();
         // transform the data into block entries
 
         JavaRDD<String> rdd = null;
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
-
-//        String inDirectory = "/groups/soc_bigdata/kratos/output/temp/data/data";
-//        String outDirectory = "/groups/soc_bigdata/kratos/output/temp";
-
         String inDirectory = "finalData";
         String outDirectory = "output";
 
@@ -70,14 +63,6 @@ public class UniIndex
                     err.setItemid(0);
                     return err;
                 }
-
-//                if(elements.length<=1){
-//                    System.out.println(elements[0]);
-//                    News err = new News();
-//                    err.setText(elements[0]);
-//                    err.setItemid(0);
-//                    return err;
-//                }
 
                 Integer itemid = Integer.parseInt(elements[0]);
                 String title = elements[2];
@@ -133,8 +118,6 @@ public class UniIndex
                     list.add(new Tuple2<String, ArrayList<Integer>>(temp, values));
 //                    System.out.println(temp);
                 }
-
-//                Iterable<Tuple2<String, ArrayList<Integer>>> ret = list;
 
                 return uniwordList.iterator();
             }

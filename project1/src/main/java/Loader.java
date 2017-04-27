@@ -19,10 +19,6 @@ import java.util.List;
 
 
 public class Loader implements Serializable {
-//        String id;
-//        String name;
-//        String number;
-//        String account;
     private SparkConf config;
     private JavaSparkContext context;
 

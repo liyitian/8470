@@ -60,8 +60,6 @@ public class BiwordSearch
         }
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
 
         String inDirectory = "output/biwordSequence";
         String outDirectory = "output/biwordoutput";

@@ -48,18 +48,10 @@ public class CountDlength
         JavaRDD<String> rdd = null;
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
-
         String inDirectory = "finalData";
         String outDirectory = "output";
 
                 JavaRDD<String> tmp = bi.loadData(inDirectory + "/part-*");
-
-//                ttmp = ttmp.repartition(20);
-
-//                ttmp.saveAsTextFile(outDirectory+"/tmp");
-//                JavaRDD<String> tmp = bi.loadData(outDirectory+"/tmp/part-00000");
 
                 if (rdd == null) rdd = tmp;
                 else rdd = rdd.union(tmp);
@@ -74,14 +66,6 @@ public class CountDlength
                     err.setItemid(0);
                     return err;
                 }
-
-//                if(elements.length<=1){
-//                    System.out.println(elements[0]);
-//                    News err = new News();
-//                    err.setText(elements[0]);
-//                    err.setItemid(0);
-//                    return err;
-//                }
 
                 Integer itemid = Integer.parseInt(elements[0]);
                 String title = elements[2];

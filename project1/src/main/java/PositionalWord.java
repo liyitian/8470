@@ -12,8 +12,6 @@ public class PositionalWord implements Serializable {
     private String key;
     private Integer frequency;
     private Hashtable<Integer, ArrayList<Integer>> list;
-//    private Integer itemid;
-//    private ArrayList<Integer> value;
 
     PositionalWord(){}
 

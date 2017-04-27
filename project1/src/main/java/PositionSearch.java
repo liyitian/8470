@@ -13,10 +13,6 @@ import org.apache.spark.sql.types.StructType;
 import java.util.ArrayList;
 import java.util.List;
 
-// Import factory methods provided by DataTypes.
-// Import StructType and StructField
-// Import Row.
-// Import RowFactory.
 
 /**
  * Created by tiger on 4/12/16.
@@ -50,7 +46,6 @@ public class PositionSearch
     public static void main(String[] args) {
         // set up and load file
         PositionSearch us = new PositionSearch();
-//        final Loader loader = new Loader();
         // transform the data into block entries
 
         JavaRDD<String> rdd = null;
@@ -64,8 +59,6 @@ public class PositionSearch
         }
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
 
         String inDirectory = "output/positionalIndexSequence";
         String outDirectory = "output/positionaloutput";
@@ -74,7 +67,6 @@ public class PositionSearch
 
                 if (rdd == null) rdd = tmp;
                 else rdd = rdd.union(tmp);
-//        String[] elements = s.split("(,)|(,\\[)|(,\\])");
 
 
 // The schema is encoded in a string
@@ -96,16 +88,6 @@ public class PositionSearch
                                 .replaceAll("(\\()|(\\]\\))|(key=)|(list=)|(\\}\\))|(frequency=)|(')", "")
                                 .split("(\\{)");
                         String[] front = fields[0].split(",");
-//                        String[] back = fields[1].split("\\],");
-
-//                        StringBuilder s = new StringBuilder();
-//                        for(int i = 3; i < fields.length; i++){
-//                            if(i == 3) {
-//                                s.append(fields[i].trim());
-//                            }else{
-//                                s.append("," + fields[i].trim());
-//                            }
-//                        }
 
                         return RowFactory.create(front[0], Integer.parseInt(front[2].trim()), fields[1]);
                     }

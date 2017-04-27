@@ -57,14 +57,11 @@ public class CosIndex
         JavaRDD<String> rdd = null;
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
-
-        String inDirectory = "output/finalData";
+        String inDirectory = "finalData";
         String outDirectory = "output";
 
-        JavaRDD<String> tmp = bmc.loadData(inDirectory + "/part-*").cache();
-        JavaRDD<String> uniword = bmc.loadData(outDirectory + "/uniwordSequence/part-*").cache();
+        JavaRDD<String> tmp = bmc.loadData(inDirectory + "/part-00000").cache();
+        JavaRDD<String> uniword = bmc.loadData(outDirectory + "/uniwordSequence/part-00000").cache();
         //word,1,2,3
         JavaPairRDD<String, String> uniwordpair = uniword.mapToPair(new PairFunction<String, String, String>() {
             public Tuple2<String, String> call(String s) throws Exception {
@@ -75,9 +72,6 @@ public class CosIndex
             }
         }).cache();
         //get document length list
-        //word,1,2,3
-//        List<Tuple2<String, String>> uniwordlist = uniwordpair.collect();
-
 
         JavaRDD<News> news = tmp.map(new Function<String, News>() {
             public News call(String s) throws Exception {

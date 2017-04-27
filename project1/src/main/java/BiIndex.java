@@ -40,14 +40,9 @@ public class BiIndex
     public static void main(String[] args) {
         // set up and load file
         BiIndex bi = new BiIndex();
-//        final Loader loader = new Loader();
         // transform the data into block entries
 
         JavaRDD<String> rdd = null;
-
-        // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
 
         String inDirectory = "finalData";
         String outDirectory = "output";
@@ -67,14 +62,6 @@ public class BiIndex
                     err.setItemid(0);
                     return err;
                 }
-
-//                if(elements.length<=1){
-//                    System.out.println(elements[0]);
-//                    News err = new News();
-//                    err.setText(elements[0]);
-//                    err.setItemid(0);
-//                    return err;
-//                }
 
                 Integer itemid = Integer.parseInt(elements[0]);
                 String title = elements[2];
@@ -134,12 +121,8 @@ public class BiIndex
                         else break;
                     }
 
-//                while (s.hasNext()){
-
                     list.add(new Tuple2<String, ArrayList<Integer>>(first + " " + second, values));
                 }
-//                    System.out.println(temp);
-//                }
 
                 return list.iterator();
             }

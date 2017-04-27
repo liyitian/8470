@@ -44,18 +44,10 @@ public class PositionalIndex
         JavaRDD<String> rdd = null;
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
-
         String inDirectory = "finalData";
         String outDirectory = "output";
 
                 JavaRDD<String> tmp = bi.loadData(inDirectory + "/part-*");
-
-//                ttmp = ttmp.repartition(20);
-
-//                ttmp.saveAsTextFile(outDirectory+"/tmp");
-//                JavaRDD<String> tmp = bi.loadData(outDirectory+"/tmp/part-00000");
 
                 if (rdd == null) rdd = tmp;
                 else rdd = rdd.union(tmp);
@@ -64,20 +56,11 @@ public class PositionalIndex
             public News call(String s) throws Exception {
                 String[] elements = s.split("\\$\\$");
                 if(!elements[0].matches("^[0-9]*$")) {
-//                    System.out.println(elements[0]);
                     News err = new News();
                     err.setText(elements[0]);
                     err.setItemid(0);
                     return err;
                 }
-
-//                if(elements.length<=1){
-//                    System.out.println(elements[0]);
-//                    News err = new News();
-//                    err.setText(elements[0]);
-//                    err.setItemid(0);
-//                    return err;
-//                }
 
                 Integer itemid = Integer.parseInt(elements[0]);
                 String title = elements[2];
@@ -173,61 +156,5 @@ public class PositionalIndex
 
         System.out.println("Success!");
 
-//        JavaPairRDD<String, Tuple2<Integer,Hashtable<Integer,ArrayList<Integer>>>> singleWord = text.flatMapToPair(new PairFlatMapFunction<Tuple2<String, Integer>, String, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>>() {
-//            public Iterator<Tuple2<String, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>>> call(Tuple2<String, Integer> stringIntegerTuple2) throws Exception {
-//                List<Tuple2<String,Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>>> list = new ArrayList<Tuple2<String, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>>>();
-//                Iterator<String> s = Arrays.asList(stringIntegerTuple2._1
-//                        .replaceAll("(\\pP)|(\\pS)|(\\s)|(null)|(amp)|(quot)", " ").split(" ")).iterator();
-//                int itemid = stringIntegerTuple2._2;
-//                ArrayList<Integer> pos = new ArrayList<Integer>();
-//                Hashtable<Integer, ArrayList<Integer>> hash = new Hashtable<Integer, ArrayList<Integer>>();
-//                String word = "";
-//                int frequency = 1;
-//                int i = 0;//position
-//                String regex = "(\\d+)";
-//                Pattern p = Pattern.compile(regex);
-//
-//                while (s.hasNext()) {
-//
-//                    i++;
-//                    word = s.next();
-//                    if (word.equals("") | p.matcher(word).find()) {
-//                        i++;
-//                        continue;
-//                    }
-//
-//                    if (hash.containsKey(itemid)) {
-//                        hash.get(itemid).add(i);
-//                    } else {
-//                        ArrayList<Integer> arr = new ArrayList<Integer>();
-//                        arr.add(i);
-//                        hash.put(itemid, arr);
-//                    }
-//
-//                    list.add(new Tuple2<String, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>>
-//                            (word, new Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>(frequency, hash)));
-//                }
-//                return list.iterator();
-//            }
-//        }).reduceByKey(new Function2<Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>>() {
-//            public Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>> call(Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>> integerHashtableTuple2, Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>> integerHashtableTuple22) throws Exception {
-//                int frequency = integerHashtableTuple2._1 + integerHashtableTuple22._1;
-////                Hashtable<Integer, ArrayList<Integer>> hash = new Hashtable<Integer, ArrayList<Integer>>();
-//
-//
-//                //merge
-//                for(Map.Entry<Integer, ArrayList<Integer>> entry : integerHashtableTuple2._2.entrySet()){
-//                    if(!integerHashtableTuple22._2.containsKey(entry.getKey())) {
-//                        integerHashtableTuple22._2.put(entry.getKey(), entry.getValue());
-//                    }
-//                }
-//
-//                return new Tuple2<Integer, Hashtable<Integer, ArrayList<Integer>>>(frequency, integerHashtableTuple22._2);
-//            }
-//        }).repartition(20).sortByKey();
-//
-//        singleWord.saveAsTextFile(outDirectory+"/positionalIndexSequence");
-//
-//        System.out.println("Success!");
     }
 }

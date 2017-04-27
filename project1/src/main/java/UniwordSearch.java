@@ -38,7 +38,7 @@ public class UniwordSearch
     {
 
         // set up Spark
-        config = new SparkConf().setMaster("local[2]")
+        config = new SparkConf().setMaster("local[4]")
                 .setAppName("Boolean Search System")
                 .set("spark.io.compression.codec", "org.apache.spark.io.LZ4CompressionCodec")
                 .set("spark.hadoop.validateOutputSpecs", "false")
@@ -66,9 +66,6 @@ public class UniwordSearch
         }
 
         // default parameters
-//        String inDirectory = "user/yli25/data/data";
-//        String outDirectory = "user/yli25/output";
-
         String inDirectory = "output/uniwordSequence";
         String outDirectory = "output/uniwordoutput";
 
@@ -76,7 +73,6 @@ public class UniwordSearch
 
                 if (rdd == null) rdd = tmp;
                 else rdd = rdd.union(tmp);
-//        String[] elements = s.split("(,)|(,\\[)|(,\\])");
 
 
 // The schema is encoded in a string
